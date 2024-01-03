@@ -1,1 +1,13 @@
 @import "reset-css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Victor+Mono:wght@200;400;500;600;700&display=swap");
+
+:root {
+    --yt-spec-base-background: #0f0f0f;
+    --white-1: #fff;
+    --white-2: #f9f9f9;
+    --white-3: #f1f1f1;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}
