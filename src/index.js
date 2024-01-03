@@ -5,6 +5,7 @@ import 'styles/global.css';
 import { createBrowserRouter } from 'react-router-dom';
 import { RouterProvider } from 'react-router';
 import Root from 'layouts/Root';
+import Home from 'pages/Home';
 
 const router = createBrowserRouter([
     {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <div>Home</div>,
+                element: <Home />,
             },
             {
                 path: 'watch',
