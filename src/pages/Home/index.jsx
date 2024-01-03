@@ -6,12 +6,6 @@ function Home() {
         <div className={styles.Home}>
             <div className={styles.Home_videos}>
                 <VideoCard />
-                <VideoCard />
-                <VideoCard />
-                <VideoCard />
-                <VideoCard />
-                <VideoCard />
-                <VideoCard />
             </div>
         </div>
     );

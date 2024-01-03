@@ -1,10 +1,16 @@
-import Video from 'components/ui/Video';
-import styles from './index.module.css';
+import Thumbnail from 'components/ui/Thumbnail';
 
-function VideoCard({ vid, title, description, date, view }) {
+function VideoCard({ videoData }) {
+    // const { vid, title, thumbnails, description, date, view } = videoData;
     return (
         <div>
-            <Video vid={'ftaXMKV3ffE'} />
+            <Thumbnail
+                thumbnails={{
+                    medium: {
+                        url: 'https://i.ytimg.com/vi/ftaXMKV3ffE/mqdefault.jpg',
+                    },
+                }}
+            />
         </div>
     );
 }
