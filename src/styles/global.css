@@ -1,13 +1,46 @@
-@import "reset-css";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Victor+Mono:wght@200;400;500;600;700&display=swap");
+@import 'reset-css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Victor+Mono:wght@200;400;500;600;700&display=swap');
 
 :root {
-    --yt-spec-base-background: #0f0f0f;
+    --background-color: var(--white-1);
+    --logo-color: var(--black-1);
+    --search-button-background-color: #e5e7eb;
+    --search-border-color: #ccc;
+    --search-button-icon-color: #0f0f0f;
+    --logo-color: #000;
     --white-1: #fff;
     --white-2: #f9f9f9;
     --white-3: #f1f1f1;
+    --black-1: #000000;
 }
 
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100dvh;
+    width: 100dvw;
+    background-color: var(--background-color);
+}
+
+html {
+    font-size: 62.5%;
+    color: var(--black-);
+}
+html.dark {
+    --background-color: #0f0f0f;
+    --search-border-color: hsl(0, 0%, 18.82%);
+    --search-button-background-color: #222;
+    --search-button-icon-color: #fff;
+    --logo-color: #fff;
+    color: var(--white-1);
+}
+
+button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
