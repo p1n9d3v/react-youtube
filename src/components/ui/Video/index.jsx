@@ -1,26 +1,21 @@
-import { useRef } from 'react';
 import YouTube from 'react-youtube';
 
-function Video({ vid, autoplay = 0, controls = 0 }) {
-    const ref = useRef(null);
+function Video({ vid, className, playerVars, loop }) {
     const opts = {
         height: '100%',
         width: '100%',
-        autoplay,
-        playerVars: {
-            controls,
-            modestbranding: 1,
-        },
+        playerVars,
     };
 
     return (
         <YouTube
-            ref={ref}
+            className={className}
             videoId={vid}
             opts={opts}
             style={{
                 aspectRatio: '16/9',
             }}
+            onEnd={loop ? (e) => e.target.playVideo() : undefined}
         />
     );
 }
