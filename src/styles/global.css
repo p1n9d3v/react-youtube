@@ -1,21 +1,21 @@
 @import 'reset-css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Victor+Mono:wght@200;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;800&family=Roboto:wght@400;500;700;900&family=Victor+Mono:wght@200;400;500;600;700&display=swap');
 :root {
     --background-color: var(--white-1);
     --logo-color: var(--black-1);
     --search-button-background-color: #e5e7eb;
     --search-border-color: #ccc;
     --search-button-icon-color: #0f0f0f;
+    --video-title: var(--black-1);
     --logo-color: #000;
     --white-1: #fff;
     --white-2: #f9f9f9;
     --white-3: #f1f1f1;
     --black-1: #000000;
+    --gray-1: #aaaaaa;
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
@@ -26,6 +26,7 @@
 }
 
 html {
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 62.5%;
     color: var(--black-);
 }
@@ -35,6 +36,7 @@ html.dark {
     --search-button-background-color: #222;
     --search-button-icon-color: #fff;
     --logo-color: #fff;
+    --video-title: #fff;
     color: var(--white-1);
 }
 

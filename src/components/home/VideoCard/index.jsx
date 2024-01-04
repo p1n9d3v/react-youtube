@@ -2,6 +2,7 @@ import Video from 'components/ui/Video';
 import styles from './index.module.css';
 import { useRef } from 'react';
 import { Space } from 'components/ui/Space';
+import { getOffsetFromDate } from 'util';
 
 function VideoCard({ videoData }) {
     const ref = useRef(null);
@@ -10,7 +11,6 @@ function VideoCard({ videoData }) {
     return (
         <div className={styles.VideoCard}>
             <div ref={ref} className={styles.VideoCard_videoContainer}>
-                <div className={styles.VideoCard_overlay}></div>
                 <img src={snippet.thumbnails.medium.url} alt="thumbnails" />
                 <Video
                     className={styles.VideoCard_video}
@@ -20,7 +20,6 @@ function VideoCard({ videoData }) {
                         mute: 1,
                         autoplay: 1,
                         controls: 0,
-                        modestbranding: 1,
                         fs: 0,
                         start: 5,
                         end: 15,
@@ -30,13 +29,14 @@ function VideoCard({ videoData }) {
             </div>
             <Space h={0.8} />
             <div className={styles.VideoCard_infoContainer}>
-                <div>{snippet.title}</div>
-                <div>{snippet.channelTitle}</div>
-                <div>{snippet.publishedAt}</div>
-                <div>{statistics.viewCount}</div>
-                <div>{statistics.favoriteCount}</div>
-                <div>{statistics.likeCount}</div>
-                <div>{statistics.commentCount}</div>
+                <div className={styles.VideoCard_title}>{snippet.title}</div>
+                <div className={styles.VideoCard_info}>
+                    <div>{snippet.channelTitle}</div>
+                    <div className={styles.VideoCard_meta}>
+                        <div>{getOffsetFromDate(snippet.publishedAt)}</div>•
+                        <div>{statistics.viewCount} views</div>
+                    </div>
+                </div>
             </div>
         </div>
     );
