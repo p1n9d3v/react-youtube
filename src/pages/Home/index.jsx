@@ -10,7 +10,6 @@ function Home() {
             .then((data) => data.json())
             .then((data) => setVideos(data));
     }, []);
-    console.log(videos);
 
     if (videos.length === 0) return;
     return (
