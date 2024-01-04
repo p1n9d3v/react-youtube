@@ -1,5 +1,6 @@
 import { getVideos } from 'apis';
 import VideoCard from 'components/home/VideoCard';
+import VideoCardSkeleton from 'components/home/VideoCard/skeleton';
 import { useQuery } from 'react-query';
 import styles from './index.module.css';
 
@@ -11,13 +12,21 @@ function Home() {
         error,
     } = useQuery('videos', getVideos);
 
-    if (videos.length === 0) return;
+    if (isError) {
+        console.log(error);
+        return <div>Something went wrong...</div>;
+    }
+
     return (
         <div className={styles.Home}>
             <div className={styles.Home_videos}>
-                {videos.items.map((video) => (
-                    <VideoCard videoData={video} />
-                ))}
+                {isLoading
+                    ? Array(30)
+                          .fill()
+                          .map((item) => <VideoCardSkeleton />)
+                    : videos.items.map((video) => (
+                          <VideoCard videoData={video} />
+                      ))}
             </div>
         </div>
     );
