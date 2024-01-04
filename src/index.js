@@ -6,7 +6,10 @@ import { createBrowserRouter } from 'react-router-dom';
 import { RouterProvider } from 'react-router';
 import Root from 'layouts/Root';
 import Home from 'pages/Home';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
 
+const queryClient = new QueryClient();
 const router = createBrowserRouter([
     {
         path: '/',
@@ -24,9 +27,13 @@ const router = createBrowserRouter([
     },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <QueryClientProvider client={queryClient}>
+            <RouterProvider router={router} />
+            <ReactQueryDevtools initialIsOpen={true} />
+        </QueryClientProvider>
     </React.StrictMode>,
 );
 

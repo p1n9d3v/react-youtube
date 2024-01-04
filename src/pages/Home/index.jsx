@@ -1,15 +1,15 @@
+import { getVideos } from 'apis';
 import VideoCard from 'components/home/VideoCard';
-import { useEffect, useState } from 'react';
+import { useQuery } from 'react-query';
 import styles from './index.module.css';
 
 function Home() {
-    const [videos, setVideos] = useState([]);
-
-    useEffect(() => {
-        fetch('/mock/videos.json')
-            .then((data) => data.json())
-            .then((data) => setVideos(data));
-    }, []);
+    const {
+        isLoading,
+        isError,
+        data: videos,
+        error,
+    } = useQuery('videos', getVideos);
 
     if (videos.length === 0) return;
     return (
