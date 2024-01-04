@@ -5,17 +5,7 @@ import { useQuery } from 'react-query';
 import styles from './index.module.css';
 
 function Home() {
-    const {
-        isLoading,
-        isError,
-        data: videos,
-        error,
-    } = useQuery('videos', getVideos);
-
-    if (isError) {
-        console.log(error);
-        return <div>Something went wrong...</div>;
-    }
+    const { isLoading, data: videos } = useQuery('videos', getVideos);
 
     return (
         <div className={styles.Home}>
