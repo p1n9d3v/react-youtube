@@ -1,16 +1,13 @@
 import Video from 'components/ui/Video';
 import styles from './index.module.css';
-import { useRef } from 'react';
 import { Space } from 'components/ui/Space';
 import { getOffsetFromDate } from 'util';
 
 function VideoCard({ videoData }) {
-    const ref = useRef(null);
     const { id, snippet, statistics } = videoData;
-
     return (
         <div className={styles.VideoCard}>
-            <div ref={ref} className={styles.VideoCard_videoContainer}>
+            <div className={styles.VideoCard_videoContainer}>
                 <img src={snippet.thumbnails.medium.url} alt="thumbnails" />
                 <Video
                     className={styles.VideoCard_video}
