@@ -26,6 +26,12 @@ export const Video = {
             ({ pageParams = '' }) => this.fetch(pageParams),
             {
                 getNextPageParam: (lastPage, pages) => {
+                    const totalResults = lastPage.pageInfo.totalResults;
+                    const totalCurrentResults = pages.reduce(
+                        (acc, cur) => acc + cur,
+                        0,
+                    );
+                    if (totalResults === totalCurrentResults) return undefined;
                     const nextPageToken = lastPage.nextPageToken;
                     return nextPageToken;
                 },
