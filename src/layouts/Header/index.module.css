@@ -19,31 +19,3 @@
 .Header_logo {
     height: 2.4rem;
 }
-
-.Header_search {
-    display: flex;
-    align-items: center;
-    padding-left: 2.4rem;
-    width: 100%;
-    height: 4rem;
-    border: 1px solid var(--search-border-color);
-    border-radius: 2.4rem;
-}
-
-.Header_search input {
-    width: 100%;
-    background: transparent;
-    font-size: 1.6rem;
-    color: #fff;
-    outline: none;
-    border: none;
-}
-
-.Header_search button {
-    width: 6.4rem;
-    height: 100%;
-    border-top-right-radius: 2.4rem;
-    border-bottom-right-radius: 2.4rem;
-    background-color: var(--search-button-background-color);
-    color: var(--search-button-icon-color);
-}

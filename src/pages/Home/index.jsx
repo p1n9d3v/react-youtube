@@ -25,9 +25,8 @@ function Home() {
 
             observer.observe(scrollRef.current);
         }
-    }, [data, scrollRef]);
+    }, [data, scrollRef, fetchNextPage, hasNextPage]);
 
-    console.log(isFetching);
     return (
         <div className={styles.Home}>
             <div className={styles.Home_videos}>
@@ -35,8 +34,8 @@ function Home() {
                     ? Array(50)
                           .fill()
                           .map((_, index) => <VideoCardSkeleton key={index} />)
-                    : data.videos.map((video) => (
-                          <VideoCard key={video.id} videoData={video} />
+                    : data.videos.map((video, index) => (
+                          <VideoCard key={video.id + index} videoData={video} />
                       ))}
             </div>
 
@@ -50,7 +49,6 @@ function Home() {
                     <div
                         style={{
                             width: '100%',
-                            height: 'fit-content',
                         }}
                         className={styles.Home_videos}
                     >

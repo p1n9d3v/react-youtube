@@ -3,7 +3,7 @@ import styles from './index.module.css';
 import { MdDarkMode } from 'react-icons/md';
 import { CiLight } from 'react-icons/ci';
 import { useEffect, useState } from 'react';
-import { IoSearchOutline } from 'react-icons/io5';
+import SearchVideo from 'components/common/Search';
 
 function Header() {
     const [darkMode, setDarkMode] = useState(() => {
@@ -28,12 +28,7 @@ function Header() {
                 </div>
             </div>
             <div className={styles.Header_col}>
-                <form className={styles.Header_search}>
-                    <input placeholder="검색" />
-                    <button>
-                        <IoSearchOutline size={24} />
-                    </button>
-                </form>
+                <SearchVideo />
             </div>
             <div
                 className={styles.Header_col}

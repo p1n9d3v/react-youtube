@@ -8,6 +8,7 @@ import Root from 'layouts/Root';
 import Home from 'pages/Home';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
+import Search from 'pages/Search';
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Home />,
+            },
+            {
+                path: 'search',
+                element: <Search />,
             },
             {
                 path: 'watch',
