@@ -8,7 +8,6 @@ function Home() {
     const { isLoading, data, isFetching, fetchNextPage, hasNextPage } =
         Video.get();
     const scrollRef = useRef(null);
-    console.log(data);
 
     useEffect(() => {
         if (scrollRef.current) {
@@ -28,6 +27,7 @@ function Home() {
         }
     }, [data, scrollRef]);
 
+    console.log(isFetching);
     return (
         <div className={styles.Home}>
             <div className={styles.Home_videos}>
@@ -43,14 +43,24 @@ function Home() {
             <div
                 ref={scrollRef}
                 style={{
-                    width: '100%',
-                    height: '1rem',
-                    fontSize: '2.4rem',
-                    textAlign: 'center',
-                    padding: '1rem 0',
+                    minHeight: '1rem',
                 }}
             >
-                {isFetching && 'Loading more...'}
+                {isFetching && hasNextPage && (
+                    <div
+                        style={{
+                            width: '100%',
+                            height: 'fit-content',
+                        }}
+                        className={styles.Home_videos}
+                    >
+                        {Array(8)
+                            .fill()
+                            .map((_, index) => (
+                                <VideoCardSkeleton key={index} />
+                            ))}
+                    </div>
+                )}
             </div>
         </div>
     );
