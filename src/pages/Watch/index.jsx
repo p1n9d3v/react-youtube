@@ -1,4 +1,4 @@
-import { VideoQuery } from 'apis';
+import { CommentsQuery, VideoQuery } from 'apis';
 import { Space } from 'components/ui/Space';
 import Video from 'components/ui/Video';
 import styles from './index.module.css';
@@ -8,9 +8,14 @@ import { useSearchParams } from 'react-router-dom';
 
 function Watch() {
     const [searchParams] = useSearchParams();
-    const { isLoading, data: video } = VideoQuery.get(searchParams.get('id'));
+    const { isLoading: isVideoLoading, data: video } = VideoQuery.get(
+        searchParams.get('id'),
+    );
+    const { isLoading, data: comments } = CommentsQuery.get(
+        searchParams.get('id'),
+    );
 
-    if (isLoading) return <div>Loading...</div>;
+    if (isVideoLoading) return <div>Loading...</div>;
 
     return (
         <div className={styles.Watch}>

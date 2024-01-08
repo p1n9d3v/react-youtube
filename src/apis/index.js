@@ -10,6 +10,7 @@ const mock = {
     video: () => `${root}/video.json`,
     videos: () => `${root}/videos.json`,
     search: () => `${root}/search.json`,
+    comments: () => `${root}/comments.json`,
 };
 const encodeParams = (params) =>
     new URLSearchParams({
@@ -101,11 +102,11 @@ export const SearchQuery = {
 };
 
 export const VideoQuery = {
-    key: (id) => ['video', id],
-    fetch: (id) => {
+    key: (videoId) => ['video', videoId],
+    fetch: (videoId) => {
         const opts = {
             part: ['snippet', 'contentDetails', 'statistics'],
-            id,
+            id: videoId,
         };
         return fetch(apis.video(opts)).then(async (res) => {
             const ret = await res.json();
@@ -113,8 +114,44 @@ export const VideoQuery = {
             return;
         });
     },
-    get(id) {
+    get(videoId) {
         // eslint-disable-next-line react-hooks/rules-of-hooks
-        return useQuery(this.key(id), () => this.fetch(id));
+        return useQuery(this.key(videoId), () => this.fetch(videoId));
+    },
+};
+
+export const CommentsQuery = {
+    key: (videoId) => ['comments', videoId],
+    fetch: (videoId, pageParams) => {
+        const opts = {
+            part: ['snippet', 'replies'],
+            videoId: videoId,
+            pageToken: pageParams,
+        };
+        return fetch(apis.comments(videoId)).then((res) => res.json());
+    },
+    get(videoId) {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        return useInfiniteQuery(
+            this.key(videoId),
+            ({ pageParams = '' }) => this.fetch(videoId, pageParams),
+            {
+                getNextPageParam: (lastPage, pages) => {
+                    const totalResults = lastPage.pageInfo.totalResults;
+                    const totalCurrentResults = pages.reduce(
+                        (acc, cur) => acc + cur,
+                        0,
+                    );
+                    if (totalResults === totalCurrentResults) return undefined;
+                    const nextPageToken = lastPage.nextPageToken;
+                    return nextPageToken;
+                },
+                select: (data) => ({
+                    comments: data.pages.flatMap((page) => page.items),
+                    nextPageToken:
+                        data.pages[data.pages.length - 1].nextPageToken,
+                }),
+            },
+        );
     },
 };
