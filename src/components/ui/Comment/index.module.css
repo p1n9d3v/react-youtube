@@ -1,0 +1,31 @@
+.Comment {
+    display: flex;
+    gap: 1rem;
+}
+.Comment img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+.Comment_infoBox {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.Comment_name {
+    font-size: 1.3rem;
+}
+.Comment_date {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.Comment_text {
+    font-size: 1.4rem;
+}
+
+.Comment_metaBox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
