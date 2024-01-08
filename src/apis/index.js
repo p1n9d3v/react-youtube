@@ -147,7 +147,9 @@ export const CommentsQuery = {
                     return nextPageToken;
                 },
                 select: (data) => ({
-                    comments: data.pages.flatMap((page) => page.items),
+                    comments: data.pages
+                        .map((page) => page.items.map((item) => item.snippet))
+                        .at(0),
                     nextPageToken:
                         data.pages[data.pages.length - 1].nextPageToken,
                 }),

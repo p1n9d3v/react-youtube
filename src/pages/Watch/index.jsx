@@ -5,6 +5,7 @@ import styles from './index.module.css';
 import { AiOutlineLike } from 'react-icons/ai';
 import { AiOutlineDislike } from 'react-icons/ai';
 import { useSearchParams } from 'react-router-dom';
+import Comments from 'components/watch/Comments';
 
 function Watch() {
     const [searchParams] = useSearchParams();
@@ -14,6 +15,7 @@ function Watch() {
     const { isLoading, data: comments } = CommentsQuery.get(
         searchParams.get('id'),
     );
+    console.log(comments);
 
     if (isVideoLoading) return <div>Loading...</div>;
 
@@ -57,7 +59,9 @@ function Watch() {
                         {video.snippet.description}
                     </div>
                 </div>
-                <div className={styles.Watch_comments}></div>
+                <div className={styles.Watch_comments}>
+                    <Comments />
+                </div>
             </div>
             <div className={styles.Watch_relative}></div>
         </div>
