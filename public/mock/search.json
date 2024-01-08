@@ -1,6 +1,6 @@
 {
     "kind": "youtube#searchListResponse",
-    "etag": "_uEqMeXMqgHDAL_qbgTkgAZp0tQ",
+    "etag": "bc7JxbA7JVri_UmbB9KVzK3afRs",
     "nextPageToken": "CBkQAA",
     "regionCode": "KR",
     "pageInfo": {
@@ -10,840 +10,846 @@
     "items": [
         {
             "kind": "youtube#searchResult",
-            "etag": "vJbvihGyHg39b5YwBby7o_9pDm4",
+            "etag": "9Sqwi_Jb6vEMuRP7eLxL8tWXVT4",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "qkRUcYHJ1JI"
+                "videoId": "T555ZCoeRKw"
             },
             "snippet": {
-                "publishedAt": "2023-03-22T04:52:04Z",
-                "channelId": "UCoLrcjPV5PbUrUyXq5mjc_A",
-                "title": "United States vs. Japan Game Highlights | 2023 World Baseball Classic Final",
-                "description": "Team USA takes on Team Japan in the 2023 World Baseball Classic Final! Don't forget to subscribe!",
+                "publishedAt": "2024-01-07T15:00:23Z",
+                "channelId": "UC4qa5EroJxnQM6Sng9WhgsQ",
+                "title": "Historic &quot;Day of the Decade&quot; Surf at La Jolla Cove, San DIego",
+                "description": "It's not often you experience the \"day of the decade\" surf at any spot, let alone the world renown big wave novelty of La Jolla Cove ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/qkRUcYHJ1JI/default.jpg",
+                        "url": "https://i.ytimg.com/vi/T555ZCoeRKw/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/qkRUcYHJ1JI/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/T555ZCoeRKw/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/qkRUcYHJ1JI/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/T555ZCoeRKw/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "MLB",
+                "channelTitle": "Ben Gravy",
                 "liveBroadcastContent": "none",
-                "publishTime": "2023-03-22T04:52:04Z"
+                "publishTime": "2024-01-07T15:00:23Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "k5eTb-_zhpf39WvATCcLO5qQAto",
+            "etag": "CJYiD8JYCMEN1dNfQdcQf8daedc",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "VUZPY2biqJU"
+                "videoId": "powm6xw0Zek"
             },
             "snippet": {
-                "publishedAt": "2023-03-29T12:00:23Z",
-                "channelId": "UCoLrcjPV5PbUrUyXq5mjc_A",
-                "title": "United States vs. Japan Full Game (3/21/23) | 2023 World Baseball Classic Final",
-                "description": "Japan vs. the United States for the World Baseball Classic championship! Don't forget to subscribe! https://www.youtube.com/mlb ...",
+                "publishedAt": "2024-01-07T19:49:10Z",
+                "channelId": "UC4i3-yfVazfuqwoz71T79Sw",
+                "title": "Party Wave! Surfers Share Wave With Dolphin at Rincon",
+                "description": "The last week of 2023 saw giant surf smash the California coast. Many surfers flocked to Rincon, Santa Barbara's famed ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/VUZPY2biqJU/default.jpg",
+                        "url": "https://i.ytimg.com/vi/powm6xw0Zek/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/VUZPY2biqJU/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/powm6xw0Zek/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/VUZPY2biqJU/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/powm6xw0Zek/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "MLB",
+                "channelTitle": "Surfline",
                 "liveBroadcastContent": "none",
-                "publishTime": "2023-03-29T12:00:23Z"
+                "publishTime": "2024-01-07T19:49:10Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "y7Losh-3cwAGR94v-_gtUlkc9Oo",
+            "etag": "NApOA8EzcK1pYZUCqtchIG2nTjw",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "Rtt0_ShVWzE"
+                "videoId": "ma67yOdMQfs"
             },
             "snippet": {
-                "publishedAt": "2024-01-04T15:00:20Z",
-                "channelId": "UCoLrcjPV5PbUrUyXq5mjc_A",
-                "title": "Most underrated player in baseball?! | Nolan Jones Full 2023 Highlights",
-                "description": "Have you ever heard of Nolan Jones? You'll be sure to follow him closely after watching his unique blend of power, speed, and ...",
+                "publishedAt": "2021-01-23T17:00:15Z",
+                "channelId": "UC--3c8RqSfAqYBdDjIG3UNA",
+                "title": "These Were The All-Time Surfing Moments Of The Year | Best Of 2020",
+                "description": "Well, that was a weird ride. Though it hasn't been easy, at least when we fixed our gaze on the ocean — or favorite place in the ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/Rtt0_ShVWzE/default.jpg",
+                        "url": "https://i.ytimg.com/vi/ma67yOdMQfs/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/Rtt0_ShVWzE/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/ma67yOdMQfs/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/Rtt0_ShVWzE/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/ma67yOdMQfs/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "MLB",
+                "channelTitle": "Red Bull Surfing",
                 "liveBroadcastContent": "none",
-                "publishTime": "2024-01-04T15:00:20Z"
+                "publishTime": "2021-01-23T17:00:15Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "zoEjmGJ8D5ob1eiNTEUm3okIblM",
+            "etag": "hrpoBAoQ9bQqGRt-bi9hjKsakAs",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "YJmwofDYOeo"
+                "videoId": "8OIdBfZW85A"
             },
             "snippet": {
-                "publishedAt": "2014-10-30T13:54:37Z",
-                "channelId": "UCvpglX8twfoNsFumGDG0BTQ",
-                "title": "World Series G7: Giants vs. Royals [Full Game HD]",
-                "description": "Tim Hudson vs. Jeremy Guthrie.",
+                "publishedAt": "2024-01-07T18:00:04Z",
+                "channelId": "UCjIuqG1hCxUdLLxOD_uR0vQ",
+                "title": "Da Hui Backdoor Shootout 2024 Day 3 Highlights (4K Raw)",
+                "description": "Filmed on January 6, 2024 at Pipeline on the North Shore of Oahu. Day 3 was a lot smaller compared to the first 2 days.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/YJmwofDYOeo/default.jpg",
+                        "url": "https://i.ytimg.com/vi/8OIdBfZW85A/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/YJmwofDYOeo/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/8OIdBfZW85A/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/YJmwofDYOeo/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/8OIdBfZW85A/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "FlyingHellFish99",
+                "channelTitle": "Surfers of Hawaii",
                 "liveBroadcastContent": "none",
-                "publishTime": "2014-10-30T13:54:37Z"
+                "publishTime": "2024-01-07T18:00:04Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "6-YS8c5YtvxnIbt5SjlgYXFdb5Y",
+            "etag": "eazFclMBt1SsYtWFduPUVq9MnEM",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "0j12Nso48JA"
+                "videoId": "3Y3WplsaDHI"
             },
             "snippet": {
-                "publishedAt": "2023-12-27T21:16:27Z",
-                "channelId": "UChbn63gdSO1HypAbfDlGLrA",
-                "title": "CRAZY Player POV Mic&#39;d Up Hits a Double and W Rizz for a Date? #rizz #baseball",
-                "description": "Do you already follow The Bullpen Training? Make sure to follow for a chance to Win a pair of VELO Shades next time? Check out ...",
+                "publishedAt": "2024-01-06T22:59:44Z",
+                "channelId": "UC6uX6GF5q2JxLjMkyivM2Og",
+                "title": "BURNED AT THE DREDGE BAR",
+                "description": "YOUTUBE VIDS CONTINUE WEEKLY AS ALWAYS MY FRIENDS PLEASE SUBSCRIBE to help SUPPORT the channel!",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/0j12Nso48JA/default.jpg",
+                        "url": "https://i.ytimg.com/vi/3Y3WplsaDHI/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/0j12Nso48JA/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/3Y3WplsaDHI/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/0j12Nso48JA/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/3Y3WplsaDHI/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "The Bullpen Training",
+                "channelTitle": "Nathan Florence",
                 "liveBroadcastContent": "none",
-                "publishTime": "2023-12-27T21:16:27Z"
+                "publishTime": "2024-01-06T22:59:44Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "dilrp3v1FUHOvuCEUpVjLW5f8xg",
+            "etag": "mC6wVdCZ1IrO4YwgGxGgEqDSDmY",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "oPNB4JZDEHk"
+                "videoId": "ejSvL5jll9U"
             },
             "snippet": {
-                "publishedAt": "2023-05-05T15:21:05Z",
-                "channelId": "UC3Z4iXO64pY5rVX6_YVypaQ",
-                "title": "Most Rarest Defensive Plays in Baseball",
-                "description": "mlb #baseball #mlbb.",
+                "publishedAt": "2023-12-30T15:30:13Z",
+                "channelId": "UC4qa5EroJxnQM6Sng9WhgsQ",
+                "title": "Historic Blacks Beach XXL San Diego 20-25ft Surf",
+                "description": "What an absolute trip to be home in New Jersey for the biggest swell I've ever seen & end up in California for this Historic Blacks ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/oPNB4JZDEHk/default.jpg",
+                        "url": "https://i.ytimg.com/vi/ejSvL5jll9U/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/oPNB4JZDEHk/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/ejSvL5jll9U/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/oPNB4JZDEHk/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/ejSvL5jll9U/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Baseball insider",
+                "channelTitle": "Ben Gravy",
                 "liveBroadcastContent": "none",
-                "publishTime": "2023-05-05T15:21:05Z"
+                "publishTime": "2023-12-30T15:30:13Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "DwLVo-K-pLJsakzWbJHXsPdsNXY",
+            "etag": "DKiHJefdgE_KRlvPsSAj95LnPTw",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "_dCBLhUyVss"
+            },
+            "snippet": {
+                "publishedAt": "2024-01-05T20:00:15Z",
+                "channelId": "UC3DIR1s_jw1wr4p4wWg7JGQ",
+                "title": "SURF RAGE - SURFER PUNCHES BOOGER AT DBAH",
+                "description": "On a busy Wednesday morning at Dbah, a surfer punches a booger in the head for dropping in. Please SUBSCRIBE and support ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/_dCBLhUyVss/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/_dCBLhUyVss/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/_dCBLhUyVss/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Raw Surfing",
+                "liveBroadcastContent": "none",
+                "publishTime": "2024-01-05T20:00:15Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "ZfmdwKHLOyzvyaW2Km9WB5_iuJo",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "eSWST13stO4"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-27T15:00:32Z",
+                "channelId": "UCVo06dBGK9VBBhq15wJxZHQ",
+                "title": "🔵4k (ASMR) 10 Hour Store Loop - Hawaii Surfing - With Relaxing Music☑️",
+                "description": "Waves of the World Filmers: Chris Kincade: https://www.instagram.com/chriskincade.wotw Andre Botha: ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/eSWST13stO4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/eSWST13stO4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/eSWST13stO4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Waves of the World",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-27T15:00:32Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "25dCCBxnPsPFNCYCbOMYCtUW1ww",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "fGzkLc3YsqA"
+            },
+            "snippet": {
+                "publishedAt": "2024-01-06T14:30:15Z",
+                "channelId": "UC7c7LdfkZoztT7EcFNJ6EYg",
+                "title": "Andy Irons | Untold Stories Series | 4k UHD",
+                "description": "THE BEST SPORTS DOCUMENTARIES! Poetic Expository Reflexive Observational Performative \u200d   Participatory ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/fGzkLc3YsqA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/fGzkLc3YsqA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/fGzkLc3YsqA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Sports Documentaries ",
+                "liveBroadcastContent": "none",
+                "publishTime": "2024-01-06T14:30:15Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "qw4SlexIiV7axlqzrtInZUT3nNI",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "svvEfVqkrh8"
+            },
+            "snippet": {
+                "publishedAt": "2024-01-06T19:44:07Z",
+                "channelId": "UCsXYYt9hmwvaIl6v73JHKWw",
+                "title": "Huge waves made it nearly impossible to get out",
+                "description": "I recently filmed a HUGE, terrifying days of surf and realized that I don't normally share with you the most difficult and scary part of ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/svvEfVqkrh8/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/svvEfVqkrh8/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/svvEfVqkrh8/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Brad Jacobson",
+                "liveBroadcastContent": "none",
+                "publishTime": "2024-01-06T19:44:07Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "K8nyK-2SPgA51FAlnqIJnQcp4no",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "ZeMUdwZcM3U"
+            },
+            "snippet": {
+                "publishedAt": "2024-01-07T05:51:34Z",
+                "channelId": "UC3DIR1s_jw1wr4p4wWg7JGQ",
+                "title": "MICK FANNING ALWAYS GETS HIS WAVE (RAW SURFING)",
+                "description": "Mick fanning and a few pro surfers dominate a heavy dbah line up. Please SUBSCRIBE and support the channel. If you see ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ZeMUdwZcM3U/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ZeMUdwZcM3U/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ZeMUdwZcM3U/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Raw Surfing",
+                "liveBroadcastContent": "none",
+                "publishTime": "2024-01-07T05:51:34Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "ZjD0ROrF2v17cl64BmWJI67rVyA",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "QB8GMebrFXg"
+            },
+            "snippet": {
+                "publishedAt": "2023-03-04T18:00:11Z",
+                "channelId": "UCJBWZDkunrjWh50Etxdys2g",
+                "title": "Big wave surfers in Southern California #shorts",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/QB8GMebrFXg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/QB8GMebrFXg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/QB8GMebrFXg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "SoCal Surfer",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-03-04T18:00:11Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "GXWrXt4xCI7Ec87sHXraeJLuUgc",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "W6uH0fszffY"
+            },
+            "snippet": {
+                "publishedAt": "2024-01-07T06:05:11Z",
+                "channelId": "UCTYHNSWYy4jCSCj1Q1Fq0ew",
+                "title": "WATCH LIVE Burleigh Single Fin Festival 2024 - Finals Day",
+                "description": "Subscribe to Billabong for more videos: https://www.youtube.com/user/billabong Visit www.billabong.com for the latest athlete ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/W6uH0fszffY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/W6uH0fszffY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/W6uH0fszffY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Billabong",
+                "liveBroadcastContent": "none",
+                "publishTime": "2024-01-07T06:05:11Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "znY8QAOgEmmwgABqm3rjRle5dBs",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "b7Pl5Rr8ZYk"
+            },
+            "snippet": {
+                "publishedAt": "2023-02-01T19:14:10Z",
+                "channelId": "UC--3c8RqSfAqYBdDjIG3UNA",
+                "title": "The BEST of Surfing in 2022",
+                "description": "What a year. 2022 was packed to the gills with everything the surfing world has to offer. Whether it be seemingly endless historic ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/b7Pl5Rr8ZYk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/b7Pl5Rr8ZYk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/b7Pl5Rr8ZYk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Red Bull Surfing",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-02-01T19:14:10Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "ZH-3-5RAjxjbKrTh5J9fWsD6DpQ",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "2G4RChmrPvY"
+            },
+            "snippet": {
+                "publishedAt": "2024-01-05T16:16:06Z",
+                "channelId": "UCbHktl0IyojB4I5mJ7XPZjA",
+                "title": "THE BIGGEST SUNSET BEACH OF 2024 w John John Florence",
+                "description": "As the morning kicked off %80 of the island packed into Ehukai Beach Park to witness the 2024 Da Hui Backdoor shootout out but ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/2G4RChmrPvY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/2G4RChmrPvY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/2G4RChmrPvY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Oahu Surf Films",
+                "liveBroadcastContent": "none",
+                "publishTime": "2024-01-05T16:16:06Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "vmK-6Mj4UusWrOcDwgwT3wwbyf4",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "z82_wYk5lYQ"
+            },
+            "snippet": {
+                "publishedAt": "2024-01-06T08:09:54Z",
+                "channelId": "UCtqFUxpLnV-RaraQVu1rMTw",
+                "title": "World champion surfer Kai Lenny holding his cracked helmet &#39;It may have saved my life&#39;",
+                "description": "Surf helmets have been around for decades but the recent photo of big wave surfer Kai Lenny holding his cracked helmet after a ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/z82_wYk5lYQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/z82_wYk5lYQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/z82_wYk5lYQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "KHON2 News",
+                "liveBroadcastContent": "none",
+                "publishTime": "2024-01-06T08:09:54Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "HDHGeE8UdHrLrYzT3O1U6DJEnSY",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "XNHJkdlNIvc"
+            },
+            "snippet": {
+                "publishedAt": "2024-01-05T14:00:32Z",
+                "channelId": "UCeYue9Nbodzg3T1Nt88E3fg",
+                "title": "Dangerously Fun Surfing 6",
+                "description": "Another dangerously fun day surfing with Mason Ho & Sheldon Paishon. Today the waves were closer to reef then usual so Shell ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/XNHJkdlNIvc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/XNHJkdlNIvc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/XNHJkdlNIvc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Ho & Pringle Productions",
+                "liveBroadcastContent": "none",
+                "publishTime": "2024-01-05T14:00:32Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "AtTBBO5UOCh-6ZzE2FXjX0jll4Q",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "a48-c7kCdYI"
+            },
+            "snippet": {
+                "publishedAt": "2023-08-31T08:00:08Z",
+                "channelId": "UCoicMEw3njXscfwHlaAJVcQ",
+                "title": "SURFING A GLASSY REEF BREAK! (4K POV)",
+                "description": "In this video, we went and surfed one of our favourite reef breaks! It got super glassy Then we went for a skate at the bowl For ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/a48-c7kCdYI/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/a48-c7kCdYI/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/a48-c7kCdYI/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Surfing With Noz",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-08-31T08:00:08Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "zA6ws8AmbP7dLOwblflJmWLrDME",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "a2NxgF2aSDw"
+            },
+            "snippet": {
+                "publishedAt": "2022-08-22T07:30:02Z",
+                "channelId": "UCOtHosOqPe9d6vLy-8LfHzQ",
+                "title": "Kelis Kaleopaa surfing at Sayulita during Mexi Log Fest 2022 | Highlight from the RAW DAYS",
+                "description": "Mexi Log Fest 2022 with stylish loggers around the world. Footage by Heiko Bothe. Full edit: ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/a2NxgF2aSDw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/a2NxgF2aSDw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/a2NxgF2aSDw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "NobodySurf : Surfing Videos",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-08-22T07:30:02Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "d3Bo0i7kbcgT4lCx6wXIeh8BM9I",
             "id": {
                 "kind": "youtube#channel",
-                "channelId": "UCoLrcjPV5PbUrUyXq5mjc_A"
+                "channelId": "UC--3c8RqSfAqYBdDjIG3UNA"
             },
             "snippet": {
-                "publishedAt": "2005-12-25T18:02:22Z",
-                "channelId": "UCoLrcjPV5PbUrUyXq5mjc_A",
-                "title": "MLB",
+                "publishedAt": "2019-02-18T17:03:24Z",
+                "channelId": "UC--3c8RqSfAqYBdDjIG3UNA",
+                "title": "Red Bull Surfing",
+                "description": "Welcome to the official Red Bull Surfing YouTube Channel! Watch weekly surf videos from across the world, with the likes of ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/ytc/AIf8zZT7l3F1lRv0CI7ud7fPmQZPWqblpvrLNdKcQMG63g=s88-c-k-c0xffffffff-no-rj-mo"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/ytc/AIf8zZT7l3F1lRv0CI7ud7fPmQZPWqblpvrLNdKcQMG63g=s240-c-k-c0xffffffff-no-rj-mo"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/ytc/AIf8zZT7l3F1lRv0CI7ud7fPmQZPWqblpvrLNdKcQMG63g=s800-c-k-c0xffffffff-no-rj-mo"
+                    }
+                },
+                "channelTitle": "Red Bull Surfing",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-02-18T17:03:24Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "GYMOvKCtVPLxs-89NMiHfW1igfM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "1c-4NxXvH-g"
+            },
+            "snippet": {
+                "publishedAt": "2023-12-04T07:20:57Z",
+                "channelId": "UCjIuqG1hCxUdLLxOD_uR0vQ",
+                "title": "Pro Surfer Goes Down Hard! #pipeline  #surfing",
+                "description": "Pro surfer Joao Chianca from Brazil wipes out at Backdoor while surfing in Hawaii. Glad to report he is in stable condition.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/1c-4NxXvH-g/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/1c-4NxXvH-g/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/1c-4NxXvH-g/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Surfers of Hawaii",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-12-04T07:20:57Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "Khlpr87Bl8a93Wlb91VxiurvWDM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "j1AQ_s-y52M"
+            },
+            "snippet": {
+                "publishedAt": "2022-07-16T19:00:13Z",
+                "channelId": "UCvOh9i-BOFzu51rpj33fGag",
+                "title": "7 tips to transition from beginner to intermediate | How to Surf",
+                "description": "In this video, we break down our 7 best tips on how to transition from Beginner to Intermediate faster. 00:00 Intro 00:24 Surf The ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/j1AQ_s-y52M/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/j1AQ_s-y52M/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/j1AQ_s-y52M/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Barefoot Surf",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-07-16T19:00:13Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "ZTPxlh6Wt9XUWXnVvfFZ42y2vXI",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "Q3kI8atcI6E"
+            },
+            "snippet": {
+                "publishedAt": "2022-06-10T19:07:20Z",
+                "channelId": "UCx18ywTcohtS9lpNXt8noWQ",
+                "title": "The greatest surfer of all-time 🤯 (via @AustinKeen)",
                 "description": "",
                 "thumbnails": {
                     "default": {
-                        "url": "https://yt3.ggpht.com/ytc/AIf8zZTZ4GPbR1W6GonTlDnU2zvWOQ064wORGkMr4m_9oIY=s88-c-k-c0xffffffff-no-rj-mo"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/ytc/AIf8zZTZ4GPbR1W6GonTlDnU2zvWOQ064wORGkMr4m_9oIY=s240-c-k-c0xffffffff-no-rj-mo"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/ytc/AIf8zZTZ4GPbR1W6GonTlDnU2zvWOQ064wORGkMr4m_9oIY=s800-c-k-c0xffffffff-no-rj-mo"
-                    }
-                },
-                "channelTitle": "MLB",
-                "liveBroadcastContent": "none",
-                "publishTime": "2005-12-25T18:02:22Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "F0V22oVPy7BKj31rYDYuDOs6R00",
-            "id": {
-                "kind": "youtube#channel",
-                "channelId": "UCXjvsikVclbNRGRlzr8jTEg"
-            },
-            "snippet": {
-                "publishedAt": "2020-08-21T19:55:48Z",
-                "channelId": "UCXjvsikVclbNRGRlzr8jTEg",
-                "title": "Baseball Doesn't Exist",
-                "description": "",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/NjNTtLGXAoX6kn5qkkQ356jMNwOWXknTl9GBYJy54fR85K3Ur00A_Vzv1vM6yJ0vOc3akfArLRc=s88-c-k-c0xffffffff-no-rj-mo"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/NjNTtLGXAoX6kn5qkkQ356jMNwOWXknTl9GBYJy54fR85K3Ur00A_Vzv1vM6yJ0vOc3akfArLRc=s240-c-k-c0xffffffff-no-rj-mo"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/NjNTtLGXAoX6kn5qkkQ356jMNwOWXknTl9GBYJy54fR85K3Ur00A_Vzv1vM6yJ0vOc3akfArLRc=s800-c-k-c0xffffffff-no-rj-mo"
-                    }
-                },
-                "channelTitle": "Baseball Doesn't Exist",
-                "liveBroadcastContent": "none",
-                "publishTime": "2020-08-21T19:55:48Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "LOZFZQLcveatciBp_Opiy6yDQXY",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "UwTOvrF9KLM"
-            },
-            "snippet": {
-                "publishedAt": "2024-01-02T19:57:15Z",
-                "channelId": "UCoLrcjPV5PbUrUyXq5mjc_A",
-                "title": "Chris Sale to the Braves: Reaction and Analysis to trade for talented left-hander",
-                "description": "What should we expect out of Chris Sale on the Braves? @MLBNetwork breaks it down! Don't forget to subscribe!",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/UwTOvrF9KLM/default.jpg",
+                        "url": "https://i.ytimg.com/vi/Q3kI8atcI6E/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/UwTOvrF9KLM/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/Q3kI8atcI6E/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/UwTOvrF9KLM/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/Q3kI8atcI6E/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "MLB",
+                "channelTitle": "Omar Raja - ESPN",
                 "liveBroadcastContent": "none",
-                "publishTime": "2024-01-02T19:57:15Z"
+                "publishTime": "2022-06-10T19:07:20Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "PVEKosJk5iw6t_ndyR7qnSjOEK4",
+            "etag": "Y5Mqj-r0U96JeODQuSqax1W1tO0",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "YsGOgCSGk2I"
+                "videoId": "RSYrpvqGGE4"
             },
             "snippet": {
-                "publishedAt": "2023-12-04T16:23:01Z",
-                "channelId": "UCgdx2sHMplnEYEGjVvdisrQ",
-                "title": "Little boy gets epic surprise from his baseball hero 🥹❤️",
-                "description": "",
+                "publishedAt": "2024-01-06T19:00:12Z",
+                "channelId": "UCLdPicN16eAKPKir8EY1UXQ",
+                "title": "WEIRDLY GLASSY MAGIC SURF &amp; WATER COLOUR | South Africa Raw POV Surfing",
+                "description": "I came to South Africa to shoot a bunch of POV clips for my DJI collaboration. The colours were some of the most glorious I'd ever ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/YsGOgCSGk2I/default.jpg",
+                        "url": "https://i.ytimg.com/vi/RSYrpvqGGE4/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/YsGOgCSGk2I/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/RSYrpvqGGE4/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/YsGOgCSGk2I/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/RSYrpvqGGE4/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Majically News",
+                "channelTitle": "Kale Brock",
                 "liveBroadcastContent": "none",
-                "publishTime": "2023-12-04T16:23:01Z"
+                "publishTime": "2024-01-06T19:00:12Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "qM2r2GoZSZHorQsdspqc2sh9RVA",
+            "etag": "R2XD4DjMvX9q7Xvo7PmIDsvIiUo",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "E160D9rEY0M"
+                "videoId": "zZqxPozl2Ec"
             },
             "snippet": {
-                "publishedAt": "2020-12-12T15:14:51Z",
-                "channelId": "UCX0mEzUTFwuFLSWD_ijA6XQ",
-                "title": "Baseball Rules for Beginners | Easy Explanation",
-                "description": "Rules of Baseball explained in very easy way using animation. Explains all important concepts one need to know to enjoy ...",
+                "publishedAt": "2023-01-24T07:00:09Z",
+                "channelId": "UCEUYW6zm6KnUxPcwY1D8HsQ",
+                "title": "Surfing Massive Waves Waimea Bay (Jan 22, 2023)  4K",
+                "description": "What occurred on January 22, 2023, at Waimea Bay on the North Shore of Oahu is nothing short of historical. We're simply doing ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/E160D9rEY0M/default.jpg",
+                        "url": "https://i.ytimg.com/vi/zZqxPozl2Ec/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/E160D9rEY0M/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/zZqxPozl2Ec/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/E160D9rEY0M/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/zZqxPozl2Ec/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "The School Of Sports",
+                "channelTitle": "Eimy’s Hawaii Happy life 🏄🏻",
                 "liveBroadcastContent": "none",
-                "publishTime": "2020-12-12T15:14:51Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "tnElxRtPHR030dR9XDrfs24CHeg",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "fCOY6M2iA-A"
-            },
-            "snippet": {
-                "publishedAt": "2023-04-06T14:22:21Z",
-                "channelId": "UCRfKJZ7LHueFudiDgAJDr9Q",
-                "title": "Rarest Baseball Odds 2️⃣",
-                "description": "baseball #mlb #mlbb.",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/fCOY6M2iA-A/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/fCOY6M2iA-A/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/fCOY6M2iA-A/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "Top All Sports",
-                "liveBroadcastContent": "none",
-                "publishTime": "2023-04-06T14:22:21Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "AZhUQ6hEGtuvYbD8Tn2oKkl0-rY",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "qwPyvxywQ6M"
-            },
-            "snippet": {
-                "publishedAt": "2023-12-19T16:20:37Z",
-                "channelId": "UCENztHCRuf3_ZPweYOJ9vrw",
-                "title": "8u #baseball team #photoshoot ! #nikonz9 #sportsportraits",
-                "description": "",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/qwPyvxywQ6M/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/qwPyvxywQ6M/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/qwPyvxywQ6M/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "Jaison Sterling ",
-                "liveBroadcastContent": "none",
-                "publishTime": "2023-12-19T16:20:37Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "P_WTO9Kcw25Rf1KvwdIUUWww4U0",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "LE4e0cYRQiE"
-            },
-            "snippet": {
-                "publishedAt": "2023-11-06T23:00:17Z",
-                "channelId": "UCj5pdBYmmElLAAFjU8Dbb2g",
-                "title": "MIGUEL CABRERA&#39;S SON! Christopher Cabrera GOES YARD at HUGE Perfect Game Tournament!",
-                "description": "Follow #PerfectGame on social media! Tiktok: https://www.tiktok.com/@perfectgame_usa Instagram: ...",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/LE4e0cYRQiE/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/LE4e0cYRQiE/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/LE4e0cYRQiE/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "Perfect Game Baseball",
-                "liveBroadcastContent": "none",
-                "publishTime": "2023-11-06T23:00:17Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "30Q22rT3TK5aYJW9YLlXnkMsC9w",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "NTYF_ADbVmw"
-            },
-            "snippet": {
-                "publishedAt": "2022-06-04T14:32:02Z",
-                "channelId": "UCoLrcjPV5PbUrUyXq5mjc_A",
-                "title": "Position Player Pitching Battle!!! The best part of baseball!!",
-                "description": "Don't forget to subscribe! https://www.youtube.com/mlb Follow us elsewhere too: Twitter: https://twitter.com/MLB Instagram: ...",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/NTYF_ADbVmw/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/NTYF_ADbVmw/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/NTYF_ADbVmw/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "MLB",
-                "liveBroadcastContent": "none",
-                "publishTime": "2022-06-04T14:32:02Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "f4bVK-km_06nZD7zta2vkNJFQV8",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "H7RTmyH6zxE"
-            },
-            "snippet": {
-                "publishedAt": "2023-12-10T03:26:17Z",
-                "channelId": "UCAEzRWunIusT9cf7sIWjDSg",
-                "title": "Braves 😢 #mlb #baseball #braves",
-                "description": "",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/H7RTmyH6zxE/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/H7RTmyH6zxE/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/H7RTmyH6zxE/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "Touchback",
-                "liveBroadcastContent": "none",
-                "publishTime": "2023-12-10T03:26:17Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "ZY9J1vMMktsFlgFijJG94OSi5vQ",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "TgUcC43emtM"
-            },
-            "snippet": {
-                "publishedAt": "2021-11-29T15:31:14Z",
-                "channelId": "UCoLrcjPV5PbUrUyXq5mjc_A",
-                "title": "The Top 100 Plays of 2021! | MLB Highlights",
-                "description": "Watch the best of the best from 2021! Let's count down from 100 to see what the best plays of the year are! Don't forget to ...",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/TgUcC43emtM/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/TgUcC43emtM/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/TgUcC43emtM/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "MLB",
-                "liveBroadcastContent": "none",
-                "publishTime": "2021-11-29T15:31:14Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "KUdZzBO5YINNhOqX-Zyi4y_q-fg",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "7W32J_nmSqs"
-            },
-            "snippet": {
-                "publishedAt": "2023-09-12T13:00:03Z",
-                "channelId": "UCUwwNXidmmSMkismLKO0xuw",
-                "title": "Acuña ROCKS THE BABY 😤",
-                "description": "Enjoy some of the best baseball content on Baseball Daily!",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/7W32J_nmSqs/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/7W32J_nmSqs/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/7W32J_nmSqs/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "Baseball Daily",
-                "liveBroadcastContent": "none",
-                "publishTime": "2023-09-12T13:00:03Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "4ZQ3MMO_NBJVjZOwfu7DEtnt0HA",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "HpzCtxzq-vo"
-            },
-            "snippet": {
-                "publishedAt": "2023-05-10T12:40:08Z",
-                "channelId": "UCV_F5k73y8B06vd6BcOpQng",
-                "title": "Unrealistic Plays In Baseball 2️⃣",
-                "description": "Enjoy video. #MLB #Baseball #Beisbol.",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/HpzCtxzq-vo/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/HpzCtxzq-vo/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/HpzCtxzq-vo/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "EduardoBéisbol",
-                "liveBroadcastContent": "none",
-                "publishTime": "2023-05-10T12:40:08Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "zsUO1iKdvCtIsnU_OGgm5hkIP3E",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "HV0bpOotUVQ"
-            },
-            "snippet": {
-                "publishedAt": "2023-03-19T04:43:10Z",
-                "channelId": "UCoLrcjPV5PbUrUyXq5mjc_A",
-                "title": "United States vs. Venezuela Game Highlights | 2023 World Baseball Classic",
-                "description": "Team USA takes on Team Venezuela in the World Baseball Classic quarterfinals! Don't forget to subscribe!",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/HV0bpOotUVQ/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/HV0bpOotUVQ/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/HV0bpOotUVQ/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "MLB",
-                "liveBroadcastContent": "none",
-                "publishTime": "2023-03-19T04:43:10Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "gIgm5IXg89Zgs9d6H_9SQLz6u5s",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "8OHJ9lRSjuU"
-            },
-            "snippet": {
-                "publishedAt": "2023-03-10T15:55:33Z",
-                "channelId": "UCoLrcjPV5PbUrUyXq5mjc_A",
-                "title": "Korea vs. Japan Game Highlights | 2023 World Baseball Classic",
-                "description": "Korea takes on Japan in Pool Play! Don't forget to subscribe! https://www.youtube.com/mlb Follow us elsewhere too: Twitter: ...",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/8OHJ9lRSjuU/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/8OHJ9lRSjuU/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/8OHJ9lRSjuU/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "MLB",
-                "liveBroadcastContent": "none",
-                "publishTime": "2023-03-10T15:55:33Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "EgEv6KFDMbWDHzSB4IYv0JecNhY",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "L3YeX5xftAQ"
-            },
-            "snippet": {
-                "publishedAt": "2023-03-17T18:36:53Z",
-                "channelId": "UCoLrcjPV5PbUrUyXq5mjc_A",
-                "title": "Korea vs. Japan Full Game (3/10/23) | 2023 World Baseball Classic",
-                "description": "Check out the 2023 World Baseball Classic Pool Play matchup between Japan and Korea, where Japan won in HUGE fashion, ...",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/L3YeX5xftAQ/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/L3YeX5xftAQ/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/L3YeX5xftAQ/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "MLB",
-                "liveBroadcastContent": "none",
-                "publishTime": "2023-03-17T18:36:53Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "Ardggmqbd7nHo_GgoGoc02eUaMY",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "0CZhwtncggI"
-            },
-            "snippet": {
-                "publishedAt": "2023-01-25T16:25:19Z",
-                "channelId": "UCOrQxGtWH2DiWxREBNrTtPw",
-                "title": "1 in a Million MLB Moments",
-                "description": "These are the craziest 1 in a million moments ever seen in the MLB! #mlb #baseball #sports.",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/0CZhwtncggI/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/0CZhwtncggI/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/0CZhwtncggI/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "dime+",
-                "liveBroadcastContent": "none",
-                "publishTime": "2023-01-25T16:25:19Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "FSpp31fj9Fjni3ud7IC70TiMc00",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "_dFtsSrDKPk"
-            },
-            "snippet": {
-                "publishedAt": "2023-12-29T20:43:59Z",
-                "channelId": "UChbn63gdSO1HypAbfDlGLrA",
-                "title": "AMAZING POV Double &amp; Score with 13U PG Player of the Year Colin Anderson #baseball #shorts",
-                "description": "Do you already follow The Bullpen Training? Make sure to follow for a chance to Win a pair of VELO Shades next time? Check out ...",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/_dFtsSrDKPk/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/_dFtsSrDKPk/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/_dFtsSrDKPk/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "The Bullpen Training",
-                "liveBroadcastContent": "none",
-                "publishTime": "2023-12-29T20:43:59Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "wNd4jmpB2sCSs72Zi6jjITFyIUU",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "egO2brIU8uA"
-            },
-            "snippet": {
-                "publishedAt": "2023-10-28T04:00:23Z",
-                "channelId": "UCaYxyR9mzVlTrOOyZD0XAmA",
-                "title": "Catching Footballs with Baseball Pine Tar...",
-                "description": "do not try this at home.",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/egO2brIU8uA/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/egO2brIU8uA/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/egO2brIU8uA/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "MMG",
-                "liveBroadcastContent": "none",
-                "publishTime": "2023-10-28T04:00:23Z"
+                "publishTime": "2023-01-24T07:00:09Z"
             }
         }
     ]

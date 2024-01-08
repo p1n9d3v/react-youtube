@@ -1,31 +1,14 @@
-import { Video } from 'apis';
+import { VideoQuery } from 'apis';
 import VideoCard from 'components/home/VideoCard';
 import VideoCardSkeleton from 'components/home/VideoCard/skeleton';
-import { useEffect, useRef } from 'react';
+import useInfiniteScroll from 'hooks/useInfiniteScroll';
 import styles from './index.module.css';
 
 function Home() {
     const { isLoading, data, isFetching, fetchNextPage, hasNextPage } =
-        Video.get();
-    const scrollRef = useRef(null);
+        VideoQuery.get();
 
-    useEffect(() => {
-        if (scrollRef.current) {
-            const observer = new IntersectionObserver(
-                (entry) => {
-                    if (entry.at(0).isIntersecting && hasNextPage) {
-                        fetchNextPage();
-                    }
-                },
-                {
-                    rootMargin: '0px',
-                    threshold: 0.1,
-                },
-            );
-
-            observer.observe(scrollRef.current);
-        }
-    }, [data, scrollRef, fetchNextPage, hasNextPage]);
+    const { scrollRef } = useInfiniteScroll(fetchNextPage);
 
     return (
         <div className={styles.Home}>
@@ -35,7 +18,11 @@ function Home() {
                           .fill()
                           .map((_, index) => <VideoCardSkeleton key={index} />)
                     : data.videos.map((video, index) => (
-                          <VideoCard key={video.id + index} videoData={video} />
+                          <VideoCard
+                              key={video.id + index}
+                              id={video.id}
+                              videoData={video}
+                          />
                       ))}
             </div>
 

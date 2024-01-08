@@ -1,22 +1,19 @@
-import YouTube from 'react-youtube';
-
-function Video({ vid, className, playerVars, loop }) {
-    const opts = {
-        height: '100%',
-        width: '100%',
-        playerVars,
-    };
-
+function Video({ vid, className, playerVars }) {
+    const opts = new URLSearchParams(playerVars).toString();
     return (
-        <YouTube
+        <iframe
+            title="video"
             className={className}
-            videoId={vid}
-            opts={opts}
+            width="100%"
+            height="100%"
+            src={`https://www.youtube.com/embed/${vid}?${opts}`}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
             style={{
                 aspectRatio: '16/9',
             }}
-            onEnd={loop ? (e) => e.target.playVideo() : undefined}
-        />
+        ></iframe>
     );
 }
 
