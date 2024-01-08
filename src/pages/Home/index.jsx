@@ -1,4 +1,4 @@
-import { VideoQuery } from 'apis';
+import { VideosQuery } from 'apis';
 import VideoCard from 'components/home/VideoCard';
 import VideoCardSkeleton from 'components/home/VideoCard/skeleton';
 import useInfiniteScroll from 'hooks/useInfiniteScroll';
@@ -6,7 +6,7 @@ import styles from './index.module.css';
 
 function Home() {
     const { isLoading, data, isFetching, fetchNextPage, hasNextPage } =
-        VideoQuery.get();
+        VideosQuery.get();
 
     const { scrollRef } = useInfiniteScroll(fetchNextPage);
 

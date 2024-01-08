@@ -2,11 +2,16 @@ import Video from 'components/ui/Video';
 import styles from './index.module.css';
 import { Space } from 'components/ui/Space';
 import { getOffsetFromDate } from 'util';
+import { useNavigate } from 'react-router-dom';
 
 function VideoCard({ id, videoData }) {
     const { snippet, statistics } = videoData;
+    const navigate = useNavigate();
     return (
-        <div className={styles.VideoCard}>
+        <div
+            className={styles.VideoCard}
+            onClick={() => navigate(`/watch?id=${id}`)}
+        >
             <div className={styles.VideoCard_videoContainer}>
                 <img src={snippet.thumbnails.medium.url} alt="thumbnails" />
                 <Video

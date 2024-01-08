@@ -13,6 +13,8 @@
     --white-3: #f1f1f1;
     --black-1: #000000;
     --gray-1: #aaaaaa;
+    --info-background-color: var(--white-3);
+    --info-color: #333;
 }
 
 * {
@@ -37,8 +39,10 @@ html.dark {
     --search-border-color: hsl(0, 0%, 18.82%);
     --search-button-background-color: #222;
     --search-button-icon-color: #fff;
+    --info-background-color: #2e2e2e;
     --logo-color: #fff;
     --video-title: #fff;
+    --info-color: var(--gray-1);
     color: var(--white-1);
 }
 

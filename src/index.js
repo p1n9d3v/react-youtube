@@ -9,6 +9,7 @@ import Home from 'pages/Home';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import Search from 'pages/Search';
+import Watch from 'pages/Watch';
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'watch',
-                element: <div>Detail</div>,
+                element: <Watch />,
             },
         ],
     },

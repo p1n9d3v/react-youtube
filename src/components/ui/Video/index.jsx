@@ -12,6 +12,7 @@ function Video({ vid, className, playerVars }) {
             allowFullScreen
             style={{
                 aspectRatio: '16/9',
+                borderRadius: '1rem',
             }}
         ></iframe>
     );

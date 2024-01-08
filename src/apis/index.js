@@ -1,26 +1,41 @@
-import { useInfiniteQuery } from 'react-query';
+import { useInfiniteQuery, useQuery } from 'react-query';
 
+const env = 'development';
 const root =
-    process.env.REACT_APP_ENV === 'development'
+    process.env.REACT_APP_ENV === env
         ? '/mock'
         : 'https://www.googleapis.com/youtube/v3';
 const key = process.env.REACT_APP_YOUTUBE_API_KEY;
 const mock = {
+    video: () => `${root}/video.json`,
     videos: () => `${root}/videos.json`,
     search: () => `${root}/search.json`,
 };
-const youtube = {
-    videos: (pageParams) =>
-        `${root}/videos?part=snippet,contentDetails,statistics&chart=mostPopular&maxResults=50&regionCode=US&pageToke=${pageParams}&key=${key}`,
-    search: (query, pageParams) =>
-        `${root}/search?part=snippet&maxResults=25&q=surfing&q=${query}&key=${key}&pageToke=${pageParams}`,
-};
-const apis = process.env.REACT_APP_ENV === 'development' ? mock : youtube;
+const encodeParams = (params) =>
+    new URLSearchParams({
+        ...params,
+        key,
+    }).toString();
 
-export const VideoQuery = {
+const youtube = {
+    video: (params) => `/videos?${encodeParams(params)}`,
+    videos: (params) => `${root}/videos?${encodeParams(params)}`,
+    search: (params) => `${root}/search?${encodeParams(params)}`,
+};
+
+const apis = process.env.REACT_APP_ENV === env ? mock : youtube;
+
+export const VideosQuery = {
     key: ['videos'],
-    fetch: async (pageParams) => {
-        return await fetch(apis.videos(pageParams)).then((res) => res.json());
+    fetch: (pageParams) => {
+        const opts = {
+            part: ['snippet', 'contentDetails', 'statistics'],
+            chart: 'mostPopular',
+            maxResults: 50,
+            regionCode: 'US',
+            pageToken: pageParams,
+        };
+        return fetch(apis.videos(opts)).then((res) => res.json());
     },
     get() {
         // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -50,10 +65,14 @@ export const VideoQuery = {
 
 export const SearchQuery = {
     key: (query) => ['search', query],
-    fetch: async (query, pageParams) => {
-        return await fetch(apis.search(query, pageParams)).then((res) =>
-            res.json(),
-        );
+    fetch: (query, pageParams) => {
+        const opts = {
+            part: ['snippet'],
+            maxResults: 50,
+            q: query,
+            pageToken: pageParams,
+        };
+        return fetch(apis.search(opts)).then((res) => res.json());
     },
     get(query) {
         // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -78,5 +97,24 @@ export const SearchQuery = {
                 }),
             },
         );
+    },
+};
+
+export const VideoQuery = {
+    key: (id) => ['video', id],
+    fetch: (id) => {
+        const opts = {
+            part: ['snippet', 'contentDetails', 'statistics'],
+            id,
+        };
+        return fetch(apis.video(opts)).then(async (res) => {
+            const ret = await res.json();
+            if (ret) return ret['items'][0];
+            return;
+        });
+    },
+    get(id) {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        return useQuery(this.key(id), () => this.fetch(id));
     },
 };

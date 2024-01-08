@@ -1,0 +1,73 @@
+.Watch {
+    padding: 0 1.6rem;
+}
+
+.Watch_title {
+    font-size: 2rem;
+}
+
+.Watch_meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.Watch_channel {
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    font-size: 1.6rem;
+}
+.Watch_channel img {
+    border-radius: 50%;
+    width: 3.6rem;
+    height: 3.6rem;
+}
+
+.Watch_likesButtonGroup {
+    position: relative;
+    display: flex;
+    background: var(--info-background-color);
+    height: 3.6rem;
+    border-radius: 2rem;
+}
+.Watch_likesButtonGroup::after {
+    content: '';
+    display: block;
+    height: 2.6rem;
+    width: 1px;
+    position: absolute;
+    background: #fffeee;
+    left: 60%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.Watch_likesButtonGroup button {
+    display: flex;
+    gap: 0.4rem;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+}
+.Watch_likesButtonGroup button svg {
+    font-size: 2.4rem;
+}
+.Watch_information {
+    background: var(--info-background-color);
+    border-radius: 1.2rem;
+    padding: 1.4rem;
+    font-size: 1.4rem;
+}
+
+.Watch_viewsFavorContainer {
+    display: flex;
+    margin-bottom: 0.4rem;
+    gap: 1rem;
+    font-weight: 500;
+}
+.Watch_description {
+    white-space: pre-wrap;
+    line-height: 1.6;
+    margin-top: 1.4rem;
+    font-size: 1.4rem;
+    color: var(--info-color);
+}
