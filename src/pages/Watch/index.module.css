@@ -10,7 +10,21 @@
 .Watch_relative {
     flex-basis: 42.6rem;
 }
+.Spinner {
+    margin: calc(50% - 25px) auto;
+    width: 5rem;
+    height: 5rem;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #ff0000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
 
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
 @media screen and (max-width: 768px) {
     .Watch {
         flex-direction: column;

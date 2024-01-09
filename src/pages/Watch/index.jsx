@@ -12,7 +12,12 @@ function Watch() {
     const id = searchParams.get('id');
     const { isLoading: isVideoLoading, data: video } = VideoQuery.get(id);
 
-    if (isVideoLoading) return <div>Loading...</div>;
+    if (true)
+        return (
+            <div>
+                <div className={styles.Spinner}></div>
+            </div>
+        );
     return (
         <div className={styles.Watch}>
             <div className={styles.Watch_detail}>
