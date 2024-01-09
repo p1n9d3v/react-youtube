@@ -1,0 +1,9 @@
+.RelativeVideos {
+    padding: 0 1.2rem;
+}
+.RelativeVideos_videos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100dvh;
+}

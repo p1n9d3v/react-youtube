@@ -6,6 +6,7 @@ import { AiOutlineLike } from 'react-icons/ai';
 import { AiOutlineDislike } from 'react-icons/ai';
 import { useSearchParams } from 'react-router-dom';
 import Comments from 'components/watch/Comments';
+import RelativeVideos from 'components/watch/RelativeVideos';
 
 function Watch() {
     const [searchParams] = useSearchParams();
@@ -16,7 +17,9 @@ function Watch() {
     return (
         <div className={styles.Watch}>
             <div className={styles.Watch_detail}>
-                <Video vid={video.id} />
+                <div>
+                    <Video vid={video.id} />
+                </div>
                 <Space h={1} />
                 <div className={styles.Watch_title}>{video.snippet.title}</div>
                 <div className={styles.Watch_meta}>
@@ -62,7 +65,9 @@ function Watch() {
                     <Comments id={'WZ375Y6Cx0o'} />
                 </div>
             </div>
-            <div className={styles.Watch_relative}></div>
+            <div className={styles.Watch_relative}>
+                <RelativeVideos tags={video.snippet.tags} />
+            </div>
         </div>
     );
 }

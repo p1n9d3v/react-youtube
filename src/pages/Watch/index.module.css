@@ -1,5 +1,7 @@
 .Watch {
     padding: 0 1.6rem;
+    display: flex;
+    gap: 2.4rem;
 }
 
 .Watch_title {
@@ -74,4 +76,7 @@
 .Watch_commentCount {
     font-size: 2rem;
     font-weight: 600;
+}
+.Watch_relative {
+    min-width: 25%;
 }
