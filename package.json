@@ -2,7 +2,7 @@
     "name": "youtube",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://p1n9d3v.github.io/react-youtube",
+    "homepage": "https://p1n9d3v.github.io/react-youtube/",
     "dependencies": {
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^13.4.0",

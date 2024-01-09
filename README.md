@@ -8,3 +8,8 @@
 -   [x] comment 조회
 -   [x] Infinite Scroll
 -   [x] 반응형
+
+# Requirements
+
+-   Set YOUTUBE API KEY in .env file
+-   Set 'production' to NEV in .env file
