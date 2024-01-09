@@ -1,0 +1,67 @@
+.VideoMeta {
+}
+.VideoMeta_information {
+    display: flex;
+    justify-content: space-between;
+}
+.VideoMeta_title {
+    font-size: 2rem;
+}
+.VideoMeta_channel {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    font-size: 1.6rem;
+}
+.VideoMeta_channel img {
+    border-radius: 50%;
+    width: 3.6rem;
+    height: 3.6rem;
+}
+.VideoMeta_statistics {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.VideoMeta_likesGroup {
+    position: relative;
+    display: flex;
+    background: var(--info-background-color);
+    border-radius: 2rem;
+}
+.VideoMeta_likesGroup::after {
+    content: '';
+    display: block;
+    height: 2.6rem;
+    width: 1px;
+    position: absolute;
+    background: #fffeee;
+    left: 60%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.VideoMeta_statisticsButton {
+    display: flex;
+    gap: 0.4rem;
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    background: var(--info-background-color);
+    border-radius: 2rem;
+    height: 3.6rem;
+}
+
+.VideoMeta_statistics button svg {
+    font-size: 2.4rem;
+}
+
+.VideoMeta_description {
+    background: var(--info-background-color);
+    padding: 1.4rem;
+    border-radius: 1.2rem;
+    white-space: pre-wrap;
+    line-height: 1.6;
+    margin-top: 1.4rem;
+    font-size: 1.4rem;
+    color: var(--info-color);
+}

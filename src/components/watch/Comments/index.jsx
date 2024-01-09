@@ -3,7 +3,7 @@ import Comment from 'components/ui/Comment';
 import useInfiniteScroll from 'hooks/useInfiniteScroll';
 import styles from './index.module.css';
 
-function Comments({ id }) {
+function Comments({ id, commentCount }) {
     const { isLoading, data: comments, fetchNextPage } = CommentsQuery.get(id);
 
     const { setScrollRef } = useInfiniteScroll(fetchNextPage);
@@ -11,6 +11,7 @@ function Comments({ id }) {
     if (isLoading) return <div>Loading....</div>;
     return (
         <div className={styles.Comments}>
+            <div className={styles.Comments_count}>Comments {commentCount}</div>
             {comments.pages.map((page) =>
                 page.map((comment) => (
                     <div>
