@@ -1,6 +1,7 @@
 import { VideosQuery } from 'apis';
 import VideoCard from 'components/home/VideoCard';
 import VideoCardSkeleton from 'components/home/VideoCard/skeleton';
+import ScrollPoint from 'components/ui/ScrollPoint';
 import useInfiniteScroll from 'hooks/useInfiniteScroll';
 import styles from './index.module.css';
 
@@ -26,27 +27,17 @@ function Home() {
                       ))}
             </div>
 
-            <div
-                ref={(ref) => setScrollRef(ref)}
-                style={{
-                    minHeight: '1rem',
-                }}
+            <ScrollPoint
+                setRef={setScrollRef}
+                isFetching={isFetching}
+                hasNextPage={hasNextPage}
             >
-                {isFetching && hasNextPage && (
-                    <div
-                        style={{
-                            width: '100%',
-                        }}
-                        className={styles.Home_videos}
-                    >
-                        {Array(8)
-                            .fill()
-                            .map((_, index) => (
-                                <VideoCardSkeleton key={index} />
-                            ))}
-                    </div>
-                )}
-            </div>
+                {Array(8)
+                    .fill()
+                    .map((_, index) => (
+                        <VideoCardSkeleton key={index} />
+                    ))}
+            </ScrollPoint>
         </div>
     );
 }
