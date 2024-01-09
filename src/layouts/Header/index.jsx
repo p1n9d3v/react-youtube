@@ -4,11 +4,13 @@ import { MdDarkMode } from 'react-icons/md';
 import { CiLight } from 'react-icons/ci';
 import { useEffect, useState } from 'react';
 import SearchVideo from 'components/common/Search';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
     const [darkMode, setDarkMode] = useState(() => {
         return localStorage.getItem('dark') === 'true';
     });
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (darkMode) {
@@ -23,7 +25,10 @@ function Header() {
     return (
         <div className={styles.Header}>
             <div className={styles.Heaer_col}>
-                <div className={styles.Header_logo}>
+                <div
+                    className={styles.Header_logo}
+                    onClick={() => navigate('/')}
+                >
                     <Logo />
                 </div>
             </div>
