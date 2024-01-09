@@ -1,6 +1,6 @@
 import { SearchQuery } from 'apis';
-import VideoCard from 'components/home/VideoCard';
-import VideoCardSkeleton from 'components/home/VideoCard/skeleton';
+import VideoCard from 'components/common/VideoCard';
+import VideoCardSkeleton from 'components/common/VideoCard/skeleton';
 import ScrollPoint from 'components/ui/ScrollPoint';
 import useInfiniteScroll from 'hooks/useInfiniteScroll';
 import { useSearchParams } from 'react-router-dom';
@@ -10,6 +10,7 @@ function Search() {
     const [searchParams] = useSearchParams();
     const { isLoading, data, isFetching, fetchNextPage, hasNextPage } =
         SearchQuery.get(searchParams.get('q'));
+
     const { setScrollRef } = useInfiniteScroll(fetchNextPage);
 
     return (

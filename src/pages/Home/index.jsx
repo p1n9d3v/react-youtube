@@ -1,6 +1,6 @@
 import { VideosQuery } from 'apis';
-import VideoCard from 'components/home/VideoCard';
-import VideoCardSkeleton from 'components/home/VideoCard/skeleton';
+import VideoCard from 'components/common/VideoCard';
+import VideoCardSkeleton from 'components/common/VideoCard/skeleton';
 import ScrollPoint from 'components/ui/ScrollPoint';
 import useInfiniteScroll from 'hooks/useInfiniteScroll';
 import styles from './index.module.css';
