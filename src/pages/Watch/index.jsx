@@ -10,14 +10,15 @@ import VideoMeta from 'components/watch/VideoMeta';
 function Watch() {
     const [searchParams] = useSearchParams();
     const id = searchParams.get('id');
-    const { isLoading: isVideoLoading, data: video } = VideoQuery.get(id);
+    const { isLoading, data: video } = VideoQuery.get(id);
 
-    if (true)
+    if (isLoading) {
         return (
             <div>
                 <div className={styles.Spinner}></div>
             </div>
         );
+    }
     return (
         <div className={styles.Watch}>
             <div className={styles.Watch_detail}>
