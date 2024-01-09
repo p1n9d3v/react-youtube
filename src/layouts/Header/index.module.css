@@ -20,3 +20,12 @@
     height: 2.4rem;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .Header {
+        gap: 2rem;
+    }
+    .Header_logo {
+        width: 8rem;
+    }
+}

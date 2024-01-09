@@ -1,6 +1,6 @@
 .Search_videos {
     display: grid;
     gap: 2.4rem;
-    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
     margin: 0 1.6rem;
 }

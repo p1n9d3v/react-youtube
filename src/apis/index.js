@@ -3,7 +3,7 @@ import { useInfiniteQuery, useQuery } from 'react-query';
 const env = 'development';
 const root =
     process.env.REACT_APP_ENV === env
-        ? '/mock'
+        ? '/react-youtube/mock'
         : 'https://www.googleapis.com/youtube/v3';
 const key = process.env.REACT_APP_YOUTUBE_API_KEY;
 

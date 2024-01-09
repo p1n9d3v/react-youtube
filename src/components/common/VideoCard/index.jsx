@@ -4,29 +4,43 @@ import { Space } from 'components/ui/Space';
 import { getOffsetFromDate } from 'util';
 import { useNavigate } from 'react-router-dom';
 import { formatNumberWithSuffix } from 'util';
+import { useState } from 'react';
 
 function VideoCard({ id, videoData }) {
+    const [autoplay, setAutoplay] = useState(false);
     const { snippet, statistics } = videoData;
     const navigate = useNavigate();
+
+    const onHoverVideo = () => {
+        if (!autoplay) setAutoplay(true);
+    };
+    const onLeaveVideo = () => {
+        setAutoplay(false);
+    };
     return (
         <div
             className={styles.VideoCard}
             onClick={() => navigate(`/watch?id=${id}`)}
         >
-            <div className={styles.VideoCard_video}>
+            <div
+                className={styles.VideoCard_video}
+                onMouseOver={onHoverVideo}
+                onMouseLeave={onLeaveVideo}
+            >
                 <img src={snippet.thumbnails.medium.url} alt="thumbnails" />
                 <Video
                     vid={id}
-                    autoplay={1}
-                    playerVars={{
-                        loop: 1,
-                        mute: 1,
-                        autoplay: 1,
-                        controls: 0,
-                        fs: 0,
-                        start: 5,
-                        end: 20,
-                        playlist: id,
+                    autoplay={autoplay}
+                    opts={{
+                        playerVars: {
+                            loop: 1,
+                            mute: 1,
+                            controls: 0,
+                            fs: 0,
+                            start: 5,
+                            end: 10,
+                            playlist: id,
+                        },
                     }}
                 />
             </div>

@@ -22,9 +22,7 @@ function Watch() {
     return (
         <div className={styles.Watch}>
             <div className={styles.Watch_detail}>
-                <div>
-                    <Video vid={video.id} />
-                </div>
+                <Video vid={video.id} autoplay={false} />
                 <Space h={1} />
                 <VideoMeta
                     snippet={video.snippet}

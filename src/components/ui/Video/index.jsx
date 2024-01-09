@@ -1,20 +1,29 @@
-function Video({ vid, className, playerVars }) {
-    const opts = new URLSearchParams(playerVars).toString();
+import { useEffect, useRef } from 'react';
+import YouTube from 'react-youtube';
+import styles from './index.module.css';
+
+function Video({ vid, autoplay, opts }) {
+    const ref = useRef(null);
+
+    useEffect(() => {
+        if (ref.current) {
+            if (autoplay) ref.current.internalPlayer.playVideo();
+            else ref.current.internalPlayer.pauseVideo();
+        }
+    }, [autoplay]);
     return (
-        <iframe
-            title="video"
-            className={className}
-            width="100%"
-            height="100%"
-            src={`https://www.youtube.com/embed/${vid}?${opts}`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+        <div
             style={{
                 aspectRatio: '16/9',
-                borderRadius: '1rem',
             }}
-        ></iframe>
+        >
+            <YouTube
+                ref={ref}
+                videoId={vid}
+                opts={opts}
+                className={styles.Video_iframe}
+            />
+        </div>
     );
 }
 
