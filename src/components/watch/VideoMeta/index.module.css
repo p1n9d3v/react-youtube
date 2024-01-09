@@ -81,3 +81,13 @@
     height: auto;
     -webkit-line-clamp: 88888;
 }
+
+@media (max-width: 768px) {
+    .VideoMeta_information {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .VideoMeta_statistics {
+        justify-content: center;
+    }
+}
