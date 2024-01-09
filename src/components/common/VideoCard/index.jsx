@@ -3,6 +3,7 @@ import styles from './index.module.css';
 import { Space } from 'components/ui/Space';
 import { getOffsetFromDate } from 'util';
 import { useNavigate } from 'react-router-dom';
+import { formatNumberWithSuffix } from 'util';
 
 function VideoCard({ id, videoData }) {
     const { snippet, statistics } = videoData;
@@ -37,7 +38,10 @@ function VideoCard({ id, videoData }) {
                     {statistics && (
                         <div className={styles.VideoCard_statistics}>
                             <div>{getOffsetFromDate(snippet.publishedAt)}</div>•
-                            <div>{statistics.viewCount} views</div>
+                            <div>
+                                {formatNumberWithSuffix(statistics.viewCount)}{' '}
+                                views
+                            </div>
                         </div>
                     )}
                 </div>
