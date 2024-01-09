@@ -1,6 +1,6 @@
 import { useInfiniteQuery, useQuery } from 'react-query';
 
-const env = '';
+const env = 'development';
 const root =
     process.env.REACT_APP_ENV === env
         ? '/mock'
