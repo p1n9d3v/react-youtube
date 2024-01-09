@@ -2,6 +2,7 @@ import { RelativeVideosQuery } from 'apis';
 import useInfiniteScroll from 'hooks/useInfiniteScroll';
 import RelativeVideoCard from '../RelativeVideoCard';
 import styles from './index.module.css';
+
 function RelativeVideos({ videoCategory }) {
     const {
         isLoading,

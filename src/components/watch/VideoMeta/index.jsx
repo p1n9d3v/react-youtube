@@ -3,6 +3,7 @@ import { AiOutlineLike } from 'react-icons/ai';
 import { AiOutlineDislike } from 'react-icons/ai';
 import { MdRemoveRedEye } from 'react-icons/md';
 import { FaRegHeart } from 'react-icons/fa6';
+import { formatNumberWithSuffix } from 'util';
 
 function VideoMeta({ snippet, statistics }) {
     return (
@@ -20,7 +21,7 @@ function VideoMeta({ snippet, statistics }) {
                     <div className={styles.VideoMeta_likesGroup}>
                         <button className={styles.VideoMeta_statisticsButton}>
                             <AiOutlineLike />
-                            {statistics.likeCount.toLocaleString()}
+                            {formatNumberWithSuffix(statistics.likeCount)}
                         </button>
                         <button className={styles.VideoMeta_statisticsButton}>
                             <AiOutlineDislike />
@@ -28,11 +29,11 @@ function VideoMeta({ snippet, statistics }) {
                     </div>
                     <button className={styles.VideoMeta_statisticsButton}>
                         <MdRemoveRedEye />
-                        {statistics.viewCount.toLocaleString()}
+                        {formatNumberWithSuffix(statistics.viewCount)}
                     </button>
                     <button className={styles.VideoMeta_statisticsButton}>
                         <FaRegHeart />
-                        {statistics.favoriteCount.toLocaleString()}
+                        {formatNumberWithSuffix(statistics.favoriteCount)}
                     </button>
                 </div>
             </div>

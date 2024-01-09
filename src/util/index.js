@@ -23,3 +23,15 @@ export const getOffsetFromDate = (date) => {
     else if (minute > 0) return `${minute}분 전`;
     else if (second > 0) return `${second}초 전`;
 };
+
+export const formatNumberWithSuffix = (number) => {
+    if (number < 1000) {
+        return number.toString();
+    } else if (number < 1000000) {
+        return (number / 1000).toFixed(1) + ' K';
+    } else if (number < 1000000000) {
+        return (number / 1000000).toFixed(1) + ' M';
+    } else {
+        return (number / 1000000000).toFixed(1) + ' B';
+    }
+};
