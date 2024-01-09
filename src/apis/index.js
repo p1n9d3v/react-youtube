@@ -6,6 +6,7 @@ const root =
         ? '/mock'
         : 'https://www.googleapis.com/youtube/v3';
 const key = process.env.REACT_APP_YOUTUBE_API_KEY;
+
 const mock = {
     video: () => `${root}/video.json`,
     videos: () => `${root}/videos.json`,

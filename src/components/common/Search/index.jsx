@@ -1,6 +1,7 @@
 import { IoSearchOutline } from 'react-icons/io5';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import styles from './index.module.css';
+
 function SearchVideo() {
     const navigate = useNavigate();
     const [_, setSearchParams] = useSearchParams();
