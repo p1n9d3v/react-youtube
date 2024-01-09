@@ -12,10 +12,9 @@ function VideoCard({ id, videoData }) {
             className={styles.VideoCard}
             onClick={() => navigate(`/watch?id=${id}`)}
         >
-            <div className={styles.VideoCard_videoContainer}>
+            <div className={styles.VideoCard_video}>
                 <img src={snippet.thumbnails.medium.url} alt="thumbnails" />
                 <Video
-                    className={styles.VideoCard_video}
                     vid={id}
                     autoplay={1}
                     playerVars={{
@@ -31,12 +30,12 @@ function VideoCard({ id, videoData }) {
                 />
             </div>
             <Space h={0.8} />
-            <div className={styles.VideoCard_infoContainer}>
+            <div className={styles.VideoCard_metas}>
                 <div className={styles.VideoCard_title}>{snippet.title}</div>
-                <div className={styles.VideoCard_info}>
+                <div className={styles.VideoCard_channel}>
                     <div>{snippet.channelTitle}</div>
                     {statistics && (
-                        <div className={styles.VideoCard_meta}>
+                        <div className={styles.VideoCard_statistics}>
                             <div>{getOffsetFromDate(snippet.publishedAt)}</div>•
                             <div>{statistics.viewCount} views</div>
                         </div>
