@@ -37,7 +37,7 @@ function RelativeVideos({ videoCategory }) {
                 isFetching={isFetching}
                 hasNextPage={hasNextPage}
             >
-                {Array(8)
+                {Array(50)
                     .fill()
                     .map((_, index) => (
                         <RelativeVideoCardSkeleton key={index} />
