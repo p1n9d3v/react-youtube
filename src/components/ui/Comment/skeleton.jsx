@@ -16,7 +16,11 @@ function CommentSkeleton() {
                 baseColor="#343a40"
                 highlightColor="#adb5bd"
             />
-            <div>
+            <div
+                style={{
+                    width: '100%',
+                }}
+            >
                 <Skeleton
                     height={13}
                     width={200}
@@ -28,7 +32,6 @@ function CommentSkeleton() {
                         marginTop: '.5rem',
                     }}
                     height={14}
-                    width={400}
                     baseColor="#343a40"
                     highlightColor="#adb5bd"
                 />
@@ -37,7 +40,6 @@ function CommentSkeleton() {
                         marginTop: '.5rem',
                     }}
                     height={14}
-                    width={400}
                     baseColor="#343a40"
                     highlightColor="#adb5bd"
                 />

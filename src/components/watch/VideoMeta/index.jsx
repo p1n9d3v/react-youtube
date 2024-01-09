@@ -4,8 +4,12 @@ import { AiOutlineDislike } from 'react-icons/ai';
 import { MdRemoveRedEye } from 'react-icons/md';
 import { FaRegHeart } from 'react-icons/fa6';
 import { formatNumberWithSuffix } from 'util';
+import { useState } from 'react';
+import cn from 'classnames';
 
 function VideoMeta({ snippet, statistics }) {
+    const [openDescription, setOpenDescription] = useState(false);
+
     return (
         <div className={styles.VideoMeta}>
             <div className={styles.VideoMeta_title}>{snippet.title}</div>
@@ -37,8 +41,24 @@ function VideoMeta({ snippet, statistics }) {
                     </button>
                 </div>
             </div>
-            <div className={styles.VideoMeta_description}>
-                {snippet.description}
+            <div className={styles.VideoMeta_descriptionBox}>
+                <div
+                    className={cn(styles.VideoMeta_description, {
+                        [styles.VideoMeta_description_open]: openDescription,
+                    })}
+                >
+                    <div
+                        style={{
+                            float: 'right',
+                            color: '#4682b4',
+                            cursor: 'pointer',
+                        }}
+                        onClick={() => setOpenDescription((prev) => !prev)}
+                    >
+                        {openDescription ? 'Close' : 'Open'}
+                    </div>
+                    {snippet.description}
+                </div>
             </div>
         </div>
     );

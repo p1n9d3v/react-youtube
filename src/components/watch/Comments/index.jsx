@@ -19,7 +19,7 @@ function Comments({ id, commentCount }) {
     return (
         <div className={styles.Comments}>
             <div className={styles.Comments_count}>Comments {commentCount}</div>
-            {isLoading
+            {true
                 ? Array(30)
                       .fill()
                       .map((_, index) => <CommentSkeleton key={index} />)

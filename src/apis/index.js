@@ -1,6 +1,6 @@
 import { useInfiniteQuery, useQuery } from 'react-query';
 
-const env = 'development';
+const env = '';
 const root =
     process.env.REACT_APP_ENV === env
         ? '/mock'
@@ -40,7 +40,7 @@ export const VideosQuery = {
         };
         return fetch(apis.videos(opts)).then((res) => res.json());
     },
-    get(page) {
+    get() {
         // eslint-disable-next-line react-hooks/rules-of-hooks
         return useInfiniteQuery(
             this.key,
@@ -82,15 +82,8 @@ export const RelativeVideosQuery = {
             this.key(categoryId),
             ({ pageParam = '' }) => this.fetch(categoryId, pageParam),
             {
-                getNextPageParam: (lastPage, pages) => {
-                    const totalResults = lastPage.pageInfo.totalResults;
-                    const totalCurrentResults = pages.reduce(
-                        (acc, cur) => acc + cur,
-                        0,
-                    );
-                    if (totalResults === totalCurrentResults) return undefined;
-                    const nextPageToken = lastPage.nextPageToken;
-                    return nextPageToken;
+                getNextPageParam: (lastPage) => {
+                    return lastPage.nextPageToken;
                 },
                 select: (data) => ({
                     videos: data.pages.flatMap((page) => page.items),
@@ -103,12 +96,12 @@ export const RelativeVideosQuery = {
 };
 export const SearchQuery = {
     key: (query) => ['search', query],
-    fetch: (query, pageParams) => {
+    fetch: (query, pageParam) => {
         const opts = {
             part: ['snippet'],
             maxResults: 50,
             q: query,
-            pageToken: pageParams,
+            pageToken: pageParam,
         };
         return fetch(apis.search(opts)).then((res) => res.json());
     },
@@ -116,17 +109,10 @@ export const SearchQuery = {
         // eslint-disable-next-line react-hooks/rules-of-hooks
         return useInfiniteQuery(
             this.key(query),
-            ({ pageParams = '' }) => this.fetch(query, pageParams),
+            ({ pageParam = '' }) => this.fetch(query, pageParam),
             {
-                getNextPageParam: (lastPage, pages) => {
-                    const totalResults = lastPage.pageInfo.totalResults;
-                    const totalCurrentResults = pages.reduce(
-                        (acc, cur) => acc + cur,
-                        0,
-                    );
-                    if (totalResults === totalCurrentResults) return undefined;
-                    const nextPageToken = lastPage.nextPageToken;
-                    return nextPageToken;
+                getNextPageParam: (lastPage) => {
+                    return lastPage.nextPageToken;
                 },
                 select: (data) => ({
                     videos: data.pages.flatMap((page) => page.items),
@@ -173,15 +159,8 @@ export const CommentsQuery = {
             this.key(videoId),
             ({ pageParam = '' }) => this.fetch(videoId, pageParam),
             {
-                getNextPageParam: (lastPage, pages) => {
-                    const totalResults = lastPage.pageInfo.totalResults;
-                    const totalCurrentResults = pages.reduce(
-                        (acc, cur) => acc + cur,
-                        0,
-                    );
-                    if (totalResults === totalCurrentResults) return undefined;
-                    const nextPageToken = lastPage.nextPageToken;
-                    return nextPageToken;
+                getNextPageParam: (lastPage) => {
+                    return lastPage.nextPageToken;
                 },
                 select: (data) => {
                     return {
