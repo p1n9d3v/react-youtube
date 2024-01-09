@@ -10,3 +10,9 @@
 .Watch_relative {
     flex-basis: 42.6rem;
 }
+
+@media screen and (max-width: 768px) {
+    .Watch {
+        flex-direction: column;
+    }
+}

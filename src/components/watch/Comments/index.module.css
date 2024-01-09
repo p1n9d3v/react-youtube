@@ -1,9 +1,17 @@
-.Comments {
+.Comments_content {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
 }
 .Comments_count {
+    margin-bottom: 1.4rem;
     font-size: 1.8rem;
     font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .Comments_content {
+        max-height: 40vh;
+        overflow-y: scroll;
+    }
 }

@@ -52,3 +52,15 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #2e2e2e; /* 스크롤바의 색상 */
+
+    border-radius: 5px;
+}

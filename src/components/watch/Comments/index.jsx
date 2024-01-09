@@ -19,29 +19,31 @@ function Comments({ id, commentCount }) {
     return (
         <div className={styles.Comments}>
             <div className={styles.Comments_count}>Comments {commentCount}</div>
-            {true
-                ? Array(30)
-                      .fill()
-                      .map((_, index) => <CommentSkeleton key={index} />)
-                : comments.pages.map((page) =>
-                      page.map((comment) => (
-                          <Comment
-                              key={comment.topLevelComment.id}
-                              comment={comment}
-                          />
-                      )),
-                  )}
-            <ScrollPoint
-                setRef={setScrollRef}
-                isFetching={isFetching}
-                hasNextPage={hasNextPage}
-            >
-                {Array(20)
-                    .fill()
-                    .map((_, index) => (
-                        <CommentSkeleton key={index} />
-                    ))}
-            </ScrollPoint>
+            <div className={styles.Comments_content}>
+                {isLoading
+                    ? Array(30)
+                          .fill()
+                          .map((_, index) => <CommentSkeleton key={index} />)
+                    : comments.pages.map((page) =>
+                          page.map((comment) => (
+                              <Comment
+                                  key={comment.topLevelComment.id}
+                                  comment={comment}
+                              />
+                          )),
+                      )}
+                <ScrollPoint
+                    setRef={setScrollRef}
+                    isFetching={isFetching}
+                    hasNextPage={hasNextPage}
+                >
+                    {Array(20)
+                        .fill()
+                        .map((_, index) => (
+                            <CommentSkeleton key={index} />
+                        ))}
+                </ScrollPoint>
+            </div>
         </div>
     );
 }

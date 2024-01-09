@@ -14,7 +14,6 @@ function RelativeVideos({ videoCategory }) {
         hasNextPage,
     } = RelativeVideosQuery.get(videoCategory);
     const { setScrollRef } = useInfiniteScroll(fetchNextPage);
-
     return (
         <div className={styles.RelativeVideos}>
             <div className={styles.RelativeVideos_videos}>
@@ -26,8 +25,8 @@ function RelativeVideos({ videoCategory }) {
                           ))
                     : videos.videos.map((video) => (
                           <RelativeVideoCard
-                              key={video.id.videoId}
-                              id={video.id.videoId}
+                              key={video.id}
+                              id={video.id}
                               videoData={video}
                           />
                       ))}
