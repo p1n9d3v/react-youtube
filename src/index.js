@@ -12,26 +12,31 @@ import Search from 'pages/Search';
 import Watch from 'pages/Watch';
 
 const queryClient = new QueryClient();
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+    [
+        {
+            path: '/',
+            element: <Root />,
+            children: [
+                {
+                    index: true,
+                    element: <Home />,
+                },
+                {
+                    path: 'search',
+                    element: <Search />,
+                },
+                {
+                    path: 'watch',
+                    element: <Watch />,
+                },
+            ],
+        },
+    ],
     {
-        path: '/',
-        element: <Root />,
-        children: [
-            {
-                index: true,
-                element: <Home />,
-            },
-            {
-                path: 'search',
-                element: <Search />,
-            },
-            {
-                path: 'watch',
-                element: <Watch />,
-            },
-        ],
+        basename: process.env.PUBLIC_URL,
     },
-]);
+);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
