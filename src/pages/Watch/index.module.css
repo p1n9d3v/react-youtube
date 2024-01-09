@@ -71,3 +71,7 @@
     font-size: 1.4rem;
     color: var(--info-color);
 }
+.Watch_commentCount {
+    font-size: 2rem;
+    font-weight: 600;
+}

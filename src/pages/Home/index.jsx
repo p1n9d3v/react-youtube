@@ -8,7 +8,7 @@ function Home() {
     const { isLoading, data, isFetching, fetchNextPage, hasNextPage } =
         VideosQuery.get();
 
-    const { scrollRef } = useInfiniteScroll(fetchNextPage);
+    const { setScrollRef } = useInfiniteScroll(fetchNextPage);
 
     return (
         <div className={styles.Home}>
@@ -27,7 +27,7 @@ function Home() {
             </div>
 
             <div
-                ref={scrollRef}
+                ref={(ref) => setScrollRef(ref)}
                 style={{
                     minHeight: '1rem',
                 }}

@@ -1,6 +1,6 @@
 import { useInfiniteQuery, useQuery } from 'react-query';
 
-const env = 'development';
+const env = 'production';
 const root =
     process.env.REACT_APP_ENV === env
         ? '/mock'
@@ -19,9 +19,10 @@ const encodeParams = (params) =>
     }).toString();
 
 const youtube = {
-    video: (params) => `/videos?${encodeParams(params)}`,
+    video: (params) => `${root}/videos?${encodeParams(params)}`,
     videos: (params) => `${root}/videos?${encodeParams(params)}`,
     search: (params) => `${root}/search?${encodeParams(params)}`,
+    comments: (params) => `${root}/commentThreads?${encodeParams(params)}`,
 };
 
 const apis = process.env.REACT_APP_ENV === env ? mock : youtube;
@@ -128,7 +129,7 @@ export const CommentsQuery = {
             videoId: videoId,
             pageToken: pageParams,
         };
-        return fetch(apis.comments(videoId)).then((res) => res.json());
+        return fetch(apis.comments(opts)).then((res) => res.json());
     },
     get(videoId) {
         // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -146,13 +147,15 @@ export const CommentsQuery = {
                     const nextPageToken = lastPage.nextPageToken;
                     return nextPageToken;
                 },
-                select: (data) => ({
-                    comments: data.pages
-                        .map((page) => page.items.map((item) => item.snippet))
-                        .at(0),
-                    nextPageToken:
-                        data.pages[data.pages.length - 1].nextPageToken,
-                }),
+                select: (data) => {
+                    return {
+                        pages: data.pages.map((page) =>
+                            page.items.map((item) => item.snippet),
+                        ),
+                        nextPageToken:
+                            data.pages[data.pages.length - 1].nextPageToken,
+                    };
+                },
             },
         );
     },

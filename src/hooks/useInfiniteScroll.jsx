@@ -1,13 +1,14 @@
-const { useRef, useEffect } = require('react');
+const { useRef, useEffect, useState, useCallback } = require('react');
 
 function useInfiniteScroll(callback) {
-    const scrollRef = useRef(null);
+    const [scrollRef, setScrollRef] = useState(null);
 
     useEffect(() => {
-        if (scrollRef.current) {
+        if (scrollRef) {
             const observer = new IntersectionObserver(
                 (entry) => {
                     if (entry.at(0).isIntersecting) {
+                        console.log('callback');
                         callback();
                     }
                 },
@@ -17,12 +18,16 @@ function useInfiniteScroll(callback) {
                 },
             );
 
-            observer.observe(scrollRef.current);
+            observer.observe(scrollRef);
+
+            return () => {
+                if (scrollRef) observer.unobserve(scrollRef);
+            };
         }
     }, [scrollRef, callback]);
 
     return {
-        scrollRef,
+        setScrollRef,
     };
 }
 export default useInfiniteScroll;

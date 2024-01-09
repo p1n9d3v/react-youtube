@@ -1,4 +1,4 @@
-import { CommentsQuery, VideoQuery } from 'apis';
+import { VideoQuery } from 'apis';
 import { Space } from 'components/ui/Space';
 import Video from 'components/ui/Video';
 import styles from './index.module.css';
@@ -9,16 +9,10 @@ import Comments from 'components/watch/Comments';
 
 function Watch() {
     const [searchParams] = useSearchParams();
-    const { isLoading: isVideoLoading, data: video } = VideoQuery.get(
-        searchParams.get('id'),
-    );
-    const { isLoading, data: comments } = CommentsQuery.get(
-        searchParams.get('id'),
-    );
-    console.log(comments);
+    const id = searchParams.get('id');
+    const { isLoading: isVideoLoading, data: video } = VideoQuery.get(id);
 
     if (isVideoLoading) return <div>Loading...</div>;
-
     return (
         <div className={styles.Watch}>
             <div className={styles.Watch_detail}>
@@ -59,8 +53,13 @@ function Watch() {
                         {video.snippet.description}
                     </div>
                 </div>
+                <Space h={3} />
                 <div className={styles.Watch_comments}>
-                    <Comments />
+                    <div className={styles.Watch_commentCount}>
+                        Comments {video.statistics.commentCount}
+                    </div>
+                    <Space h={2} />
+                    <Comments id={'WZ375Y6Cx0o'} />
                 </div>
             </div>
             <div className={styles.Watch_relative}></div>

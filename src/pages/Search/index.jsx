@@ -9,7 +9,7 @@ function Search() {
     const [searchParams] = useSearchParams();
     const { isLoading, data, isFetching, fetchNextPage, hasNextPage } =
         SearchQuery.get(searchParams.get('q'));
-    const { scrollRef } = useInfiniteScroll(fetchNextPage);
+    const { setScrollRef } = useInfiniteScroll(fetchNextPage);
 
     return (
         <div className={styles.Search}>
@@ -28,7 +28,7 @@ function Search() {
             </div>
 
             <div
-                ref={scrollRef}
+                ref={(ref) => setScrollRef(ref)}
                 style={{
                     minHeight: '1rem',
                 }}

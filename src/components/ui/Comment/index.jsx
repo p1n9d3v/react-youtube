@@ -1,28 +1,60 @@
 import Down from '../Down';
-import { Space } from '../Space';
 import Up from '../Up';
 import styles from './index.module.css';
 
-function Comment() {
+function Comment({ comment }) {
+    function convertRelativeTime(time) {
+        const now = new Date();
+        const timeDate = new Date(time);
+        const seconds = Math.floor((now - timeDate) / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+        const days = Math.floor(hours / 24);
+        const months = Math.floor(days / 30);
+        const years = Math.floor(days / 365);
+
+        if (seconds < 60) {
+            return `${seconds} seconds ago`;
+        } else if (minutes < 60) {
+            return `${minutes} minutes ago`;
+        } else if (hours < 24) {
+            return `${hours} hours ago`;
+        } else if (days < 30) {
+            return `${days} days ago`;
+        } else if (months < 12) {
+            return `${months} months ago`;
+        } else {
+            return `${years} years ago`;
+        }
+    }
     return (
         <div className={styles.Comment}>
             <img
-                src="https://yt3.ggpht.com/l-43xDUQdAbFdjF8LF9nysQwtJ4CENS3CZlc8FR3SrcP1IIyUDC7Iwy6dgHtVvSr3trwfv2r_g=s48-c-k-c0x00ffffff-no-rj"
+                src={comment.topLevelComment.snippet.authorProfileImageUrl}
                 alt="user profile image"
             />
             <div className={styles.Comment_dataBox}>
                 <div className={styles.Comment_infoBox}>
-                    <div className={styles.Comment_name}>name</div>
-                    <div className={styles.Comment_date}>2 days ago</div>
+                    <div className={styles.Comment_name}>
+                        {comment.topLevelComment.snippet.authorDisplayName}
+                    </div>
+                    <div className={styles.Comment_date}>
+                        {convertRelativeTime(
+                            comment.topLevelComment.snippet.publishedAt,
+                        )}
+                    </div>
                 </div>
-                <Space h={0.5} />
                 <div className={styles.Comment_text}>
-                    123123123123123123123123
+                    {comment.topLevelComment.snippet.textOriginal}
                 </div>
                 <div className={styles.Comment_metaBox}>
-                    <Up count={4} size={20} fontSize={12} color="#020202" />
+                    <Up
+                        count={comment.topLevelComment.snippet.likeCount}
+                        size={20}
+                        fontSize={12}
+                        color="#fff"
+                    />
                     <Down size={20} />
-                    <div>Replis</div>
                 </div>
             </div>
         </div>
