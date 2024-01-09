@@ -8,7 +8,6 @@ function useInfiniteScroll(callback) {
             const observer = new IntersectionObserver(
                 (entry) => {
                     if (entry.at(0).isIntersecting) {
-                        console.log('callback');
                         callback();
                     }
                 },

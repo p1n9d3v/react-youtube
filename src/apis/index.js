@@ -30,37 +30,34 @@ const apis = process.env.REACT_APP_ENV === env ? mock : youtube;
 
 export const VideosQuery = {
     key: ['videos'],
-    fetch: (pageParams) => {
+    fetch: (pageParam) => {
         const opts = {
             part: ['snippet', 'contentDetails', 'statistics'],
             chart: 'mostPopular',
             maxResults: 50,
             regionCode: 'US',
-            pageToken: pageParams,
+            pageToken: pageParam,
         };
         return fetch(apis.videos(opts)).then((res) => res.json());
     },
-    get() {
+    get(page) {
         // eslint-disable-next-line react-hooks/rules-of-hooks
         return useInfiniteQuery(
             this.key,
-            ({ pageParams = '' }) => this.fetch(pageParams),
+            ({ pageParam = '' }) => {
+                return this.fetch(pageParam);
+            },
             {
                 getNextPageParam: (lastPage, pages) => {
-                    const totalResults = lastPage.pageInfo.totalResults;
-                    const totalCurrentResults = pages.reduce(
-                        (acc, cur) => acc + cur,
-                        0,
-                    );
-                    if (totalResults === totalCurrentResults) return undefined;
-                    const nextPageToken = lastPage.nextPageToken;
-                    return nextPageToken;
+                    return lastPage.nextPageToken;
                 },
-                select: (data) => ({
-                    videos: data.pages.flatMap((page) => page.items),
-                    nextPageToken:
-                        data.pages[data.pages.length - 1].nextPageToken,
-                }),
+                select: (data) => {
+                    return {
+                        videos: data.pages.flatMap((page) => page.items),
+                        nextPageToken:
+                            data.pages[data.pages.length - 1].nextPageToken,
+                    };
+                },
             },
         );
     },
@@ -83,7 +80,7 @@ export const RelativeVideosQuery = {
         // eslint-disable-next-line react-hooks/rules-of-hooks
         return useInfiniteQuery(
             this.key(categoryId),
-            ({ pageParams = '' }) => this.fetch(categoryId, pageParams),
+            ({ pageParam = '' }) => this.fetch(categoryId, pageParam),
             {
                 getNextPageParam: (lastPage, pages) => {
                     const totalResults = lastPage.pageInfo.totalResults;
@@ -162,11 +159,11 @@ export const VideoQuery = {
 
 export const CommentsQuery = {
     key: (videoId) => ['comments', videoId],
-    fetch: (videoId, pageParams) => {
+    fetch: (videoId, pageParam) => {
         const opts = {
             part: ['snippet', 'replies'],
             videoId: videoId,
-            pageToken: pageParams,
+            pageToken: pageParam,
         };
         return fetch(apis.comments(opts)).then((res) => res.json());
     },
@@ -174,7 +171,7 @@ export const CommentsQuery = {
         // eslint-disable-next-line react-hooks/rules-of-hooks
         return useInfiniteQuery(
             this.key(videoId),
-            ({ pageParams = '' }) => this.fetch(videoId, pageParams),
+            ({ pageParam = '' }) => this.fetch(videoId, pageParam),
             {
                 getNextPageParam: (lastPage, pages) => {
                     const totalResults = lastPage.pageInfo.totalResults;

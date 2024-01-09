@@ -26,7 +26,7 @@ function Watch() {
                 />
                 <Space h={3} />
                 <Comments
-                    id={'WZ375Y6Cx0o'}
+                    id={id}
                     commentCount={video.statistics.commentCount}
                 />
             </div>

@@ -20,7 +20,7 @@ function Comments({ id, commentCount }) {
         <div className={styles.Comments}>
             <div className={styles.Comments_count}>Comments {commentCount}</div>
             {isLoading
-                ? Array(10)
+                ? Array(30)
                       .fill()
                       .map((_, index) => <CommentSkeleton key={index} />)
                 : comments.pages.map((page) =>
@@ -36,7 +36,7 @@ function Comments({ id, commentCount }) {
                 isFetching={isFetching}
                 hasNextPage={hasNextPage}
             >
-                {Array(8)
+                {Array(20)
                     .fill()
                     .map((_, index) => (
                         <CommentSkeleton key={index} />

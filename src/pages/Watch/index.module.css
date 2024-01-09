@@ -4,6 +4,9 @@
     gap: 2.4rem;
 }
 
+.Watch_detail {
+    flex: 1;
+}
 .Watch_relative {
-    min-width: 25%;
+    flex-basis: 42.6rem;
 }
