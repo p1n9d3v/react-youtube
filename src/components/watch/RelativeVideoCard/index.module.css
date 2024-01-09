@@ -5,6 +5,7 @@
 }
 .RelativeVideoCard_videoBox {
     position: relative;
+    min-width: 16.4rem;
     max-width: 16.4rem;
     max-height: 9.4rem;
     width: 100vw;
