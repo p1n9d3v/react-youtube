@@ -6,19 +6,14 @@ import { useSearchParams } from 'react-router-dom';
 import Comments from 'components/watch/Comments';
 import RelativeVideos from 'components/watch/RelativeVideos';
 import VideoMeta from 'components/watch/VideoMeta';
+import Spinner from 'components/ui/Spinner';
 
 function Watch() {
     const [searchParams] = useSearchParams();
     const id = searchParams.get('id');
     const { isLoading, data: video } = VideoQuery.get(id);
 
-    if (isLoading) {
-        return (
-            <div>
-                <div className={styles.Spinner}></div>
-            </div>
-        );
-    }
+    if (isLoading) return <Spinner />;
     return (
         <div className={styles.Watch}>
             <div className={styles.Watch_detail}>

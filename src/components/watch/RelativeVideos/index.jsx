@@ -1,5 +1,6 @@
 import { RelativeVideosQuery } from 'apis';
 import ScrollPoint from 'components/ui/ScrollPoint';
+import Spinner from 'components/ui/Spinner';
 import useInfiniteScroll from 'hooks/useInfiniteScroll';
 import RelativeVideoCard from '../RelativeVideoCard';
 import RelativeVideoCardSkeleton from '../RelativeVideoCard/skeleton';
@@ -37,11 +38,7 @@ function RelativeVideos({ videoCategory }) {
                 isFetching={isFetching}
                 hasNextPage={hasNextPage}
             >
-                {Array(50)
-                    .fill()
-                    .map((_, index) => (
-                        <RelativeVideoCardSkeleton key={index} />
-                    ))}
+                <Spinner />
             </ScrollPoint>
         </div>
     );
